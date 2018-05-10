@@ -111,6 +111,9 @@
                                     <constraint firstAttribute="height" constant="51" id="od1-Ze-EZ9"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="rewind8"/>
+                                <connections>
+                                    <action selector="pauseButton:" destination="2wJ-qM-Jra" eventType="touchUpInside" id="CvW-Tb-bOs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crb-MW-E2a">
                                 <rect key="frame" x="97" y="547" width="51" height="51"/>

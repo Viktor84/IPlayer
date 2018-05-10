@@ -10,6 +10,7 @@
 		DD4095BC209C5EFC0069E626 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */; };
 		DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BD209C647B0069E626 /* EqualizerViewController.swift */; };
 		DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */; };
+		DD43225220A4A189001AE0BD /* daft-punk-robot-rock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD43225120A4A189001AE0BD /* daft-punk-robot-rock.mp3 */; };
 		DDFC7F12209894CD006819D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F11209894CD006819D5 /* AppDelegate.swift */; };
 		DDFC7F14209894CD006819D5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F13209894CD006819D5 /* RootViewController.swift */; };
 		DDFC7F16209894CD006819D5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F15209894CD006819D5 /* DataViewController.swift */; };
@@ -23,6 +24,7 @@
 		DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		DD4095BD209C647B0069E626 /* EqualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
 		DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		DD43225120A4A189001AE0BD /* daft-punk-robot-rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "daft-punk-robot-rock.mp3"; path = "../../../../Desktop/daft-punk-robot-rock.mp3"; sourceTree = "<group>"; };
 		DDFC7F0E209894CD006819D5 /* IPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFC7F11209894CD006819D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDFC7F13209894CD006819D5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */,
 				DD4095BD209C647B0069E626 /* EqualizerViewController.swift */,
 				DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */,
+				DD43225120A4A189001AE0BD /* daft-punk-robot-rock.mp3 */,
 				DD30D58620A1BAA700460DBD /* New Group */,
 				DDFC7F1C209894CE006819D5 /* Assets.xcassets */,
 				DDFC7F1E209894CE006819D5 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				DDFC7F20209894CE006819D5 /* LaunchScreen.storyboard in Resources */,
 				DDFC7F1D209894CE006819D5 /* Assets.xcassets in Resources */,
 				DDFC7F1B209894CD006819D5 /* Main.storyboard in Resources */,
+				DD43225220A4A189001AE0BD /* daft-punk-robot-rock.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
