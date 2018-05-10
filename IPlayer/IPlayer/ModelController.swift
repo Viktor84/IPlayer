@@ -16,7 +16,6 @@ import UIKit
  
  There is no need to actually create view controllers for each page in advance -- indeed doing so incurs unnecessary overhead. Given the data model, these methods create, configure, and return a new view controller on demand.
  */
-//UIPageViewControllerDataSource
 
 class ModelController: NSObject {
 
@@ -48,22 +47,14 @@ class ModelController: NSObject {
 
         // Create a new view controller and pass suitable data.
         // создать новый контроллер представления и передать подходящие данные.
-        //var playerViewController = storyboard.instantiateViewController(withIdentifier: "PlayerViewController") as! PlayerViewController
-        //var equalizerViewController = storyboard.instantiateViewController(withIdentifier: "EqualizerViewController") as! EqualizerViewController
-        //var playlistViewController = storyboard.instantiateViewController(withIdentifier: "PlaylistViewController") as! PlaylistViewController
-
-        
-    
-        //let arrayDataViewController: [UIViewController] //= [playerViewController, equalizerViewController, playlistViewController]  //массив контроллеров
-        
         //let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController // <--?
-        let indexCarentViewController = index //1 //[0, 1, 2]
+        let indexCarentViewController = index  //[0, 1, 2]
         
          switch  indexCarentViewController {
          
          case  0 :
             let equalizerViewController = storyboard.instantiateViewController(withIdentifier: "EqualizerViewController") as! EqualizerViewController
-         equalizerViewController.dataObject = equalizerViewController//arrayDataViewController[index] //playerViewController
+         equalizerViewController.dataObject = equalizerViewController//arrayDataViewController[index] // dataObject удалить
          return equalizerViewController
          
          case  1:
@@ -82,7 +73,6 @@ class ModelController: NSObject {
  
         //let arrayDataViewController: [UIViewController] = [playerViewController, equalizerViewController, playlistViewController]
         //pageData = arrayDataViewController
-        
         /*
         switch  playerViewController {
         
@@ -161,7 +151,7 @@ class ModelController: NSObject {
         }
         
         index += 1
-        if index == self.pageData.count {
+        if index == self.pageData.count {  // pageData удалить !!!
             return nil
         }
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
@@ -169,7 +159,6 @@ class ModelController: NSObject {
     
         }
 
-    
 //    func presentationCount(for pageViewController: UIPageViewController) -> Int {
 //      return pageData.count
 //    }
