@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-101" y="-243"/>
+            <point key="canvasLocation" x="609" y="-243"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="snT-py-3hH">
@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="596" y="-243.32833583208398"/>
+            <point key="canvasLocation" x="5337" y="-222"/>
         </scene>
         <!--5/55-->
         <scene sceneID="ofx-sz-Y1j">
@@ -78,6 +78,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="NaR-M4-9Ws"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="sliderAction:" destination="2wJ-qM-Jra" eventType="valueChanged" id="8rZ-ve-5gw"/>
+                                </connections>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4jJ-9U-cJK">
                                 <rect key="frame" x="0.0" y="64" width="375" height="375"/>
@@ -113,6 +116,7 @@
                                 <state key="normal" title="Button" image="rewind8"/>
                                 <connections>
                                     <action selector="pauseButton:" destination="2wJ-qM-Jra" eventType="touchUpInside" id="CvW-Tb-bOs"/>
+                                    <action selector="playButton:" destination="2wJ-qM-Jra" eventType="touchUpInside" id="fGQ-7f-DrU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crb-MW-E2a">
@@ -163,6 +167,9 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" id="b5T-zt-Pg7"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" id="3x2-Sy-Vyb"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sliderBoard" destination="hdm-A7-AQ7" id="f0V-qN-6Jl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WuD-jV-JCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

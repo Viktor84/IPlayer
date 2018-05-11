@@ -10,10 +10,8 @@ import UIKit
 
 class DataViewController: UIViewController {
 
-    //@IBOutlet weak var dataLabel: UILabel!
-    var dataObject: UIViewController?  // dataObject ?
-        
 
+    var dataObject: UIViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,9 +11,6 @@ import UIKit
 
 class EqualizerViewController: UIViewController {
     
-    //@IBOutlet weak var dataLabel: UILabel!
-    var dataObject: UIViewController?  // dataObject ?
-    
     
     
     override func viewDidLoad() {
@@ -28,8 +25,7 @@ class EqualizerViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        //self.dataLabel!.text = dataObject
+
     }
     
     

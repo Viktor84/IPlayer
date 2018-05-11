@@ -11,11 +11,7 @@ import UIKit
 
 class PlaylistViewController: UITableViewController{
     
-    //@IBOutlet weak var dataLabel: UILabel!
-    var dataObject: UIViewController?  // dataObject ?
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,7 +25,6 @@ class PlaylistViewController: UITableViewController{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        //self.dataLabel!.text = dataObject
     }
     
     
