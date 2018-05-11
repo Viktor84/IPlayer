@@ -10,11 +10,8 @@
 		DD4095BC209C5EFC0069E626 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */; };
 		DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BD209C647B0069E626 /* EqualizerViewController.swift */; };
 		DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */; };
-		DD43225220A4A189001AE0BD /* daft-punk-robot-rock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD43225120A4A189001AE0BD /* daft-punk-robot-rock.mp3 */; };
-		DD544B7820A592FC00317F50 /* sting-fields_of_gold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD544B7720A592FC00317F50 /* sting-fields_of_gold.mp3 */; };
-		DD544B7A20A5930600317F50 /* apollo-440-bout-dub.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD544B7920A5930600317F50 /* apollo-440-bout-dub.mp3 */; };
-		DD544B7C20A5930B00317F50 /* apollo_440_-_stop_the_rock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD544B7B20A5930B00317F50 /* apollo_440_-_stop_the_rock.mp3 */; };
 		DD544B8120A5F37D00317F50 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DD544B8020A5F37D00317F50 /* images.jpeg */; };
+		DD544B8920A5FEAE00317F50 /* sting-fields_of_gold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */; };
 		DDFC7F12209894CD006819D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F11209894CD006819D5 /* AppDelegate.swift */; };
 		DDFC7F14209894CD006819D5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F13209894CD006819D5 /* RootViewController.swift */; };
 		DDFC7F16209894CD006819D5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F15209894CD006819D5 /* DataViewController.swift */; };
@@ -28,13 +25,14 @@
 		DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		DD4095BD209C647B0069E626 /* EqualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
 		DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
-		DD43225120A4A189001AE0BD /* daft-punk-robot-rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "daft-punk-robot-rock.mp3"; path = "../../../../Desktop/daft-punk-robot-rock.mp3"; sourceTree = "<group>"; };
-		DD544B7720A592FC00317F50 /* sting-fields_of_gold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sting-fields_of_gold.mp3"; path = "../../../../Desktop/sting-fields_of_gold.mp3"; sourceTree = "<group>"; };
-		DD544B7920A5930600317F50 /* apollo-440-bout-dub.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "apollo-440-bout-dub.mp3"; path = "../../../../Desktop/apollo-440-bout-dub.mp3"; sourceTree = "<group>"; };
-		DD544B7B20A5930B00317F50 /* apollo_440_-_stop_the_rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "apollo_440_-_stop_the_rock.mp3"; path = "../../../../Desktop/apollo_440_-_stop_the_rock.mp3"; sourceTree = "<group>"; };
 		DD544B7E20A59C8F00317F50 /* apollo_440_-_stop_the_rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "apollo_440_-_stop_the_rock.mp3"; path = "../../../../Desktop/apollo_440_-_stop_the_rock.mp3"; sourceTree = "<group>"; };
 		DD544B7F20A59C9100317F50 /* sting-fields_of_gold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sting-fields_of_gold.mp3"; path = "../../../../Desktop/sting-fields_of_gold.mp3"; sourceTree = "<group>"; };
 		DD544B8020A5F37D00317F50 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		DD544B8220A5FDD500317F50 /* apollo_440_-_stop_the_rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "apollo_440_-_stop_the_rock.mp3"; sourceTree = "<group>"; };
+		DD544B8320A5FDE800317F50 /* daft-punk-robot-rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "daft-punk-robot-rock.mp3"; sourceTree = "<group>"; };
+		DD544B8420A5FDEC00317F50 /* apollo-440-bout-dub.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "apollo-440-bout-dub.mp3"; sourceTree = "<group>"; };
+		DD544B8520A5FDF100317F50 /* apollo_440_-_stop_the_rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "apollo_440_-_stop_the_rock.mp3"; path = "../../../../Desktop/apollo_440_-_stop_the_rock.mp3"; sourceTree = "<group>"; };
+		DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sting-fields_of_gold.mp3"; sourceTree = "<group>"; };
 		DDFC7F0E209894CD006819D5 /* IPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFC7F11209894CD006819D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDFC7F13209894CD006819D5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -68,11 +66,26 @@
 		DD544B7D20A59C8000317F50 /* Song */ = {
 			isa = PBXGroup;
 			children = (
+				DD544B8520A5FDF100317F50 /* apollo_440_-_stop_the_rock.mp3 */,
+				DD544B8420A5FDEC00317F50 /* apollo-440-bout-dub.mp3 */,
+				DD544B8320A5FDE800317F50 /* daft-punk-robot-rock.mp3 */,
+				DD544B8220A5FDD500317F50 /* apollo_440_-_stop_the_rock.mp3 */,
 				DD544B8020A5F37D00317F50 /* images.jpeg */,
 				DD544B7F20A59C9100317F50 /* sting-fields_of_gold.mp3 */,
 				DD544B7E20A59C8F00317F50 /* apollo_440_-_stop_the_rock.mp3 */,
 			);
 			name = Song;
+			sourceTree = "<group>";
+		};
+		DD544B8A20A5FEE800317F50 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */,
+				DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */,
+				DD4095BD209C647B0069E626 /* EqualizerViewController.swift */,
+				DDFC7F15209894CD006819D5 /* DataViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		DDFC7F05209894CC006819D5 = {
@@ -96,16 +109,10 @@
 			children = (
 				DDFC7F11209894CD006819D5 /* AppDelegate.swift */,
 				DDFC7F13209894CD006819D5 /* RootViewController.swift */,
-				DDFC7F15209894CD006819D5 /* DataViewController.swift */,
 				DDFC7F17209894CD006819D5 /* ModelController.swift */,
-				DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */,
-				DD4095BD209C647B0069E626 /* EqualizerViewController.swift */,
-				DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */,
-				DD544B7720A592FC00317F50 /* sting-fields_of_gold.mp3 */,
+				DD544B8A20A5FEE800317F50 /* Controllers */,
+				DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */,
 				DD544B7D20A59C8000317F50 /* Song */,
-				DD544B7B20A5930B00317F50 /* apollo_440_-_stop_the_rock.mp3 */,
-				DD544B7920A5930600317F50 /* apollo-440-bout-dub.mp3 */,
-				DD43225120A4A189001AE0BD /* daft-punk-robot-rock.mp3 */,
 				DD30D58620A1BAA700460DBD /* New Group */,
 				DDFC7F1C209894CE006819D5 /* Assets.xcassets */,
 				DDFC7F1E209894CE006819D5 /* LaunchScreen.storyboard */,
@@ -174,12 +181,9 @@
 			files = (
 				DDFC7F20209894CE006819D5 /* LaunchScreen.storyboard in Resources */,
 				DDFC7F1D209894CE006819D5 /* Assets.xcassets in Resources */,
-				DD544B7C20A5930B00317F50 /* apollo_440_-_stop_the_rock.mp3 in Resources */,
 				DDFC7F1B209894CD006819D5 /* Main.storyboard in Resources */,
-				DD43225220A4A189001AE0BD /* daft-punk-robot-rock.mp3 in Resources */,
 				DD544B8120A5F37D00317F50 /* images.jpeg in Resources */,
-				DD544B7A20A5930600317F50 /* apollo-440-bout-dub.mp3 in Resources */,
-				DD544B7820A592FC00317F50 /* sting-fields_of_gold.mp3 in Resources */,
+				DD544B8920A5FEAE00317F50 /* sting-fields_of_gold.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,6 @@ class PlayerViewController: UIViewController {
         
         //Slider
         //sliderBoard.maximumValue = Float(player.duration)
-        
         //var timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: Selector(("updateSlaider")), userInfo: nil, repeats: true)
         
         do {
