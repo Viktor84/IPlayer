@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="703-4V-yAM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="703-4V-yAM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5337" y="-222"/>
+            <point key="canvasLocation" x="4290" y="-243"/>
         </scene>
         <!--5/55-->
         <scene sceneID="ofx-sz-Y1j">
@@ -115,8 +115,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="rewind8"/>
                                 <connections>
-                                    <action selector="pauseButton:" destination="2wJ-qM-Jra" eventType="touchUpInside" id="CvW-Tb-bOs"/>
-                                    <action selector="playButton:" destination="2wJ-qM-Jra" eventType="touchUpInside" id="fGQ-7f-DrU"/>
+                                    <action selector="playStop:" destination="2wJ-qM-Jra" eventType="touchUpInside" id="bix-dw-ZxF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crb-MW-E2a">
@@ -134,6 +133,9 @@
                                     <constraint firstAttribute="width" constant="51" id="IFS-no-hYa"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="rewind7"/>
+                                <connections>
+                                    <action selector="playRemoteFile:" destination="2wJ-qM-Jra" eventType="touchUpInside" id="VER-Ci-4ld"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,9 +157,13 @@
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="trailing" secondItem="Cho-zW-bPl" secondAttribute="trailing" id="c4z-WQ-bAU"/>
                             <constraint firstItem="Tqm-tN-Lpy" firstAttribute="leading" secondItem="4jJ-9U-cJK" secondAttribute="leading" id="dDJ-GS-CPn"/>
                             <constraint firstItem="hwd-gv-ivh" firstAttribute="trailing" secondItem="Cho-zW-bPl" secondAttribute="trailing" id="dhc-RS-fjd"/>
+                            <constraint firstItem="hwd-gv-ivh" firstAttribute="top" secondItem="4jJ-9U-cJK" secondAttribute="bottom" id="gUB-Hd-yKe"/>
                             <constraint firstItem="vlL-5V-489" firstAttribute="centerX" secondItem="XKt-yR-RfA" secondAttribute="centerX" id="ha5-Rb-ome"/>
                             <constraint firstItem="hwd-gv-ivh" firstAttribute="top" secondItem="4jJ-9U-cJK" secondAttribute="bottom" id="iNk-mo-Bh3"/>
                             <constraint firstItem="Cho-zW-bPl" firstAttribute="bottom" secondItem="Crb-MW-E2a" secondAttribute="bottom" constant="69" id="iQT-cV-Xsw"/>
+                            <constraint firstItem="4jJ-9U-cJK" firstAttribute="trailing" secondItem="Cho-zW-bPl" secondAttribute="trailing" id="jtq-pU-W4c"/>
+                            <constraint firstItem="4jJ-9U-cJK" firstAttribute="top" secondItem="Cho-zW-bPl" secondAttribute="top" id="u4Z-OR-kkK"/>
+                            <constraint firstItem="4jJ-9U-cJK" firstAttribute="leading" secondItem="Cho-zW-bPl" secondAttribute="leading" id="u8q-Gg-eWq"/>
                             <constraint firstItem="vlL-5V-489" firstAttribute="leading" secondItem="Crb-MW-E2a" secondAttribute="trailing" constant="14" id="ukO-Px-1GD"/>
                             <constraint firstItem="hdm-A7-AQ7" firstAttribute="leading" secondItem="Cho-zW-bPl" secondAttribute="leading" constant="55" id="v30-JP-iZF"/>
                         </constraints>
@@ -168,6 +174,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="3x2-Sy-Vyb"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="playStopButton" destination="vlL-5V-489" id="c1e-59-sqY"/>
                         <outlet property="sliderBoard" destination="hdm-A7-AQ7" id="f0V-qN-6Jl"/>
                     </connections>
                 </viewController>

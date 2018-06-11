@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46E5C0F5DCF26AF84D0235EC /* Pods_IPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */; };
 		DD4095BC209C5EFC0069E626 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */; };
 		DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BD209C647B0069E626 /* EqualizerViewController.swift */; };
 		DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */; };
 		DD544B8120A5F37D00317F50 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DD544B8020A5F37D00317F50 /* images.jpeg */; };
 		DD544B8920A5FEAE00317F50 /* sting-fields_of_gold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */; };
+		DDD3235520C04D3900BE1971 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235420C04D3900BE1971 /* ApiResult.swift */; };
+		DDD3235920C04DE500BE1971 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235820C04DE500BE1971 /* APIService.swift */; };
+		DDD3235B20C04ECA00BE1971 /* DataRequest+Trakkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235A20C04ECA00BE1971 /* DataRequest+Trakkers.swift */; };
+		DDD3235D20C04F1B00BE1971 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235C20C04F1B00BE1971 /* Endpoint.swift */; };
+		DDD3235F20C04F5400BE1971 /* Manager+Trakkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235E20C04F5400BE1971 /* Manager+Trakkers.swift */; };
 		DDFC7F12209894CD006819D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F11209894CD006819D5 /* AppDelegate.swift */; };
 		DDFC7F14209894CD006819D5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F13209894CD006819D5 /* RootViewController.swift */; };
 		DDFC7F16209894CD006819D5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F15209894CD006819D5 /* DataViewController.swift */; };
@@ -22,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		404A2074E2C407495C5EA466 /* Pods-IPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8294B9596425A4919DC05827 /* Pods-IPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		DD4095BD209C647B0069E626 /* EqualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
 		DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +42,11 @@
 		DD544B8420A5FDEC00317F50 /* apollo-440-bout-dub.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "apollo-440-bout-dub.mp3"; sourceTree = "<group>"; };
 		DD544B8520A5FDF100317F50 /* apollo_440_-_stop_the_rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "apollo_440_-_stop_the_rock.mp3"; path = "../../../../Desktop/apollo_440_-_stop_the_rock.mp3"; sourceTree = "<group>"; };
 		DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sting-fields_of_gold.mp3"; sourceTree = "<group>"; };
+		DDD3235420C04D3900BE1971 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		DDD3235820C04DE500BE1971 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DDD3235A20C04ECA00BE1971 /* DataRequest+Trakkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Trakkers.swift"; sourceTree = "<group>"; };
+		DDD3235C20C04F1B00BE1971 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		DDD3235E20C04F5400BE1971 /* Manager+Trakkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Manager+Trakkers.swift"; sourceTree = "<group>"; };
 		DDFC7F0E209894CD006819D5 /* IPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFC7F11209894CD006819D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDFC7F13209894CD006819D5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -49,12 +63,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E5C0F5DCF26AF84D0235EC /* Pods_IPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A9F60C5A140631FF8DB7314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E9F4DE4029AC7C5AFEC2BE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8294B9596425A4919DC05827 /* Pods-IPlayer.debug.xcconfig */,
+				404A2074E2C407495C5EA466 /* Pods-IPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DD30D58620A1BAA700460DBD /* New Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,11 +120,26 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		DDD3235320C04B7F00BE1971 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DDD3235420C04D3900BE1971 /* ApiResult.swift */,
+				DDD3235820C04DE500BE1971 /* APIService.swift */,
+				DDD3235A20C04ECA00BE1971 /* DataRequest+Trakkers.swift */,
+				DDD3235C20C04F1B00BE1971 /* Endpoint.swift */,
+				DDD3235E20C04F5400BE1971 /* Manager+Trakkers.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		DDFC7F05209894CC006819D5 = {
 			isa = PBXGroup;
 			children = (
+				DDD3235320C04B7F00BE1971 /* API */,
 				DDFC7F10209894CD006819D5 /* IPlayer */,
 				DDFC7F0F209894CD006819D5 /* Products */,
+				5E9F4DE4029AC7C5AFEC2BE3 /* Pods */,
+				0A9F60C5A140631FF8DB7314 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDFC7F24209894CE006819D5 /* Build configuration list for PBXNativeTarget "IPlayer" */;
 			buildPhases = (
+				4965A9E7A826B838B4E4EC7C /* [CP] Check Pods Manifest.lock */,
 				DDFC7F0A209894CC006819D5 /* Sources */,
 				DDFC7F0B209894CC006819D5 /* Frameworks */,
 				DDFC7F0C209894CC006819D5 /* Resources */,
+				198690BC01EAAD0671868625 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +202,11 @@
 				TargetAttributes = {
 					DDFC7F0D209894CC006819D5 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -189,17 +243,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		198690BC01EAAD0671868625 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4965A9E7A826B838B4E4EC7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DDFC7F0A209894CC006819D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD3235B20C04ECA00BE1971 /* DataRequest+Trakkers.swift in Sources */,
 				DDFC7F14209894CD006819D5 /* RootViewController.swift in Sources */,
+				DDD3235F20C04F5400BE1971 /* Manager+Trakkers.swift in Sources */,
 				DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */,
 				DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */,
 				DDFC7F18209894CD006819D5 /* ModelController.swift in Sources */,
 				DDFC7F16209894CD006819D5 /* DataViewController.swift in Sources */,
+				DDD3235520C04D3900BE1971 /* ApiResult.swift in Sources */,
 				DD4095BC209C5EFC0069E626 /* PlayerViewController.swift in Sources */,
+				DDD3235920C04DE500BE1971 /* APIService.swift in Sources */,
+				DDD3235D20C04F1B00BE1971 /* Endpoint.swift in Sources */,
 				DDFC7F12209894CD006819D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +442,7 @@
 		};
 		DDFC7F25209894CE006819D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8294B9596425A4919DC05827 /* Pods-IPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -359,6 +460,7 @@
 		};
 		DDFC7F26209894CE006819D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 404A2074E2C407495C5EA466 /* Pods-IPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
