@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="609" y="-243"/>
         </scene>
-        <!--Data View Controller-->
+        <!--View Controller-->
         <scene sceneID="snT-py-3hH">
             <objects>
-                <viewController storyboardIdentifier="DataViewController" id="S4R-Ja-viH" customClass="DataViewController" customModule="IPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DataViewController" id="S4R-Ja-viH" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZwX-cT-FIQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -40,20 +39,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7">
-                                <rect key="frame" x="20" y="182" width="335" height="320"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="s1b-V9-EN7" secondAttribute="trailing" constant="20" symbolic="YES" id="333-Jl-G0r"/>
-                            <constraint firstItem="s1b-V9-EN7" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="20" symbolic="YES" id="CIC-qa-9gW"/>
                             <constraint firstItem="cF2-Le-7mQ" firstAttribute="top" secondItem="K9I-jD-KjA" secondAttribute="top" symbolic="YES" id="NrC-c8-v1I"/>
                             <constraint firstItem="cF2-Le-7mQ" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="20" symbolic="YES" id="PnF-O8-Bso"/>
                             <constraint firstAttribute="trailing" secondItem="cF2-Le-7mQ" secondAttribute="trailing" constant="20" symbolic="YES" id="cCk-mG-gz5"/>
-                            <constraint firstItem="s1b-V9-EN7" firstAttribute="top" secondItem="cF2-Le-7mQ" secondAttribute="bottom" constant="8" symbolic="YES" id="kQJ-gh-hu4"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="s1b-V9-EN7" secondAttribute="bottom" constant="14" id="rGH-Fr-IeC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K9I-jD-KjA"/>
                     </view>
@@ -63,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4290" y="-243"/>
+            <point key="canvasLocation" x="4329" y="-233"/>
         </scene>
         <!--5/55-->
         <scene sceneID="ofx-sz-Y1j">
@@ -86,7 +77,9 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="FgS-7t-eQL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="Rit-MQ-r0b"/>
                                     <constraint firstAttribute="height" constant="375" id="ivu-Pg-Noa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="375" id="nS7-y7-VKh"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="group name and albums" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwd-gv-ivh">
@@ -144,8 +137,10 @@
                             <constraint firstItem="vlL-5V-489" firstAttribute="top" secondItem="hdm-A7-AQ7" secondAttribute="bottom" constant="8" id="35i-kA-ERc"/>
                             <constraint firstItem="Tqm-tN-Lpy" firstAttribute="top" secondItem="4jJ-9U-cJK" secondAttribute="bottom" constant="30" id="6bZ-ls-pMO"/>
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="top" secondItem="Cho-zW-bPl" secondAttribute="top" id="6jj-Ay-XJJ"/>
+                            <constraint firstItem="hwd-gv-ivh" firstAttribute="top" secondItem="4jJ-9U-cJK" secondAttribute="bottom" id="FzQ-e7-Biu"/>
                             <constraint firstItem="Cho-zW-bPl" firstAttribute="bottom" secondItem="vlL-5V-489" secondAttribute="bottom" constant="69" id="HRl-3J-Ba4"/>
                             <constraint firstItem="Tqm-tN-Lpy" firstAttribute="trailing" secondItem="hwd-gv-ivh" secondAttribute="trailing" id="HnZ-LR-jlh"/>
+                            <constraint firstItem="4jJ-9U-cJK" firstAttribute="trailing" secondItem="Cho-zW-bPl" secondAttribute="trailing" id="MP9-me-Dcv"/>
                             <constraint firstItem="hwd-gv-ivh" firstAttribute="leading" secondItem="Cho-zW-bPl" secondAttribute="leading" id="ONR-VV-dUW"/>
                             <constraint firstItem="Cho-zW-bPl" firstAttribute="bottom" secondItem="9H6-ta-wHl" secondAttribute="bottom" constant="69" id="S4o-pH-LRg"/>
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="top" secondItem="Cho-zW-bPl" secondAttribute="top" id="SYL-1X-wZ3"/>
@@ -153,6 +148,8 @@
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="leading" secondItem="Cho-zW-bPl" secondAttribute="leading" id="UiU-gZ-xZQ"/>
                             <constraint firstItem="Cho-zW-bPl" firstAttribute="trailing" secondItem="hdm-A7-AQ7" secondAttribute="trailing" constant="55" id="YHb-Eg-EYD"/>
                             <constraint firstItem="9H6-ta-wHl" firstAttribute="leading" secondItem="vlL-5V-489" secondAttribute="trailing" constant="14" id="ZdX-Vs-6Hc"/>
+                            <constraint firstItem="4jJ-9U-cJK" firstAttribute="leading" secondItem="Cho-zW-bPl" secondAttribute="leading" id="a67-Vk-poX"/>
+                            <constraint firstItem="4jJ-9U-cJK" firstAttribute="top" secondItem="Cho-zW-bPl" secondAttribute="top" id="bYh-Tm-VVd"/>
                             <constraint firstItem="Tqm-tN-Lpy" firstAttribute="leading" secondItem="hwd-gv-ivh" secondAttribute="leading" id="bb4-Oh-3zn"/>
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="trailing" secondItem="Cho-zW-bPl" secondAttribute="trailing" id="c4z-WQ-bAU"/>
                             <constraint firstItem="Tqm-tN-Lpy" firstAttribute="leading" secondItem="4jJ-9U-cJK" secondAttribute="leading" id="dDJ-GS-CPn"/>
@@ -223,6 +220,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wt3-RG-qyK">
+                            <rect key="frame" x="0.0" y="72" width="375" height="148"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="SearchSong"/>
+                            <connections>
+                                <action selector="SearchSong:" destination="uxd-FW-bwr" eventType="touchUpInside" id="wfg-eg-Cla"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZjI-is-YmR">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -241,7 +246,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UUm-oD-rO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3554" y="-243"/>
+            <point key="canvasLocation" x="3552.8000000000002" y="-243.32833583208398"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Exr-GV-w4g">

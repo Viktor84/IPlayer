@@ -15,9 +15,9 @@ extension SessionManager {
         var header: [String: String] = [:]
         
         header = ["Accept": "application/json"]
-        if let token = accessToken {
-            header["Authorization"] = "Token " + token
-        }
+        // if let token = accessToken {
+        header["x-mashape-key"] = "pjA81zY4QQmshef46JVPPON78KRNp1UjWhTjsn0JJz3yacI24f" // x-mashape-key
+        // }
         
         return header
     }

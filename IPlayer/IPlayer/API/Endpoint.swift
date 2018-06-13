@@ -18,21 +18,19 @@ enum Endpoint {
         switch self {
         case .appLocation,
              .requestinfo:
-            return .post
+            return .get
         }
     }
     
     //TODO: NSURL.getBaseUrl() depends on dev/prod
     var url: String {
-        #if DEBUG
-        let baseUrl = "https://apidev.trakkers.net.au"
-        #else
-        let baseUrl = "https://secureapi.trakkers.net.au"
-        #endif
+        
+        let baseUrl = "https://api.deezer.com"
+        
         
         switch self {
         case .appLocation:
-            return baseUrl + "/locations/app-location"
+            return baseUrl + "/artist/1/top?limit=50"
         case .requestinfo:
             return baseUrl + "/leads"
         }

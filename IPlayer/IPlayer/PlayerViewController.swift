@@ -9,11 +9,12 @@
 import Foundation
 import UIKit
 import AVFoundation
-//import AVKit
+import AVKit
 
 class PlayerViewController: UIViewController {
     
-    var player: AVPlayer?
+    
+    var player: AVPlayer?  //pjA81zY4QQmshef46JVPPON78KRNp1UjWhTjsn0JJz3yacI24f
     
     func playUsingAVPlayer(url: URL) {
         player = AVPlayer(url: url)
@@ -27,27 +28,31 @@ class PlayerViewController: UIViewController {
             print("Invalid URL")
             return
         }
-        
         playUsingAVPlayer(url: url)
-        
     }
     
-    
-        
-    
-        
-    
-    
+     
+
     @IBOutlet weak var playStopButton: UIButton!
     @IBOutlet weak var sliderBoard: UISlider!
     //var player = AVAudioPlayer()
-    //var player = AVPlayer()
     var slider = UISlider()
     //var playMusic = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let baseURL = URL(string: "https://deezerdevs-deezer.p.mashape.com/")
+        let fullURL = URL(string: "artist/1", relativeTo: baseURL)//URL(string: "artist/1", relativeTo: baseURL)//
+        
+        let sessionconfiguration = URLSessionConfiguration.default
+        let session = URLSession(configuration: sessionconfiguration)
+        
+        let request = URLRequest(url: fullURL!)
+        let dataTask = session.dataTask(with: fullURL!) { (data, response, error) in
+            
+        }
+        dataTask.resume()
     }
         //Slider
         //sliderBoard.maximumValue = Float(player.duration)

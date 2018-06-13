@@ -11,6 +11,12 @@
 		DD4095BC209C5EFC0069E626 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */; };
 		DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BD209C647B0069E626 /* EqualizerViewController.swift */; };
 		DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */; };
+		DD4920DA20CFE979001D9138 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4920D920CFE979001D9138 /* APIManager.swift */; };
+		DD4920DC20D021AC001D9138 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4920DB20D021AC001D9138 /* ErrorManager.swift */; };
+		DD500A5620D11DE200FFB72B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD500A5520D11DE200FFB72B /* Song.swift */; };
+		DD500A5820D129C500FFB72B /* NSError+IPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD500A5720D129C500FFB72B /* NSError+IPlayer.swift */; };
+		DD500A5A20D12DF100FFB72B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD500A5920D12DF100FFB72B /* Utils.swift */; };
+		DD500A5C20D12EF300FFB72B /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD500A5B20D12EF300FFB72B /* Constans.swift */; };
 		DD544B8120A5F37D00317F50 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DD544B8020A5F37D00317F50 /* images.jpeg */; };
 		DD544B8920A5FEAE00317F50 /* sting-fields_of_gold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */; };
 		DDD3235520C04D3900BE1971 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235420C04D3900BE1971 /* ApiResult.swift */; };
@@ -34,13 +40,16 @@
 		DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		DD4095BD209C647B0069E626 /* EqualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
 		DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
-		DD544B7E20A59C8F00317F50 /* apollo_440_-_stop_the_rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "apollo_440_-_stop_the_rock.mp3"; path = "../../../../Desktop/apollo_440_-_stop_the_rock.mp3"; sourceTree = "<group>"; };
-		DD544B7F20A59C9100317F50 /* sting-fields_of_gold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sting-fields_of_gold.mp3"; path = "../../../../Desktop/sting-fields_of_gold.mp3"; sourceTree = "<group>"; };
+		DD4920D920CFE979001D9138 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		DD4920DB20D021AC001D9138 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		DD500A5520D11DE200FFB72B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		DD500A5720D129C500FFB72B /* NSError+IPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+IPlayer.swift"; sourceTree = "<group>"; };
+		DD500A5920D12DF100FFB72B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DD500A5B20D12EF300FFB72B /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		DD544B8020A5F37D00317F50 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		DD544B8220A5FDD500317F50 /* apollo_440_-_stop_the_rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "apollo_440_-_stop_the_rock.mp3"; sourceTree = "<group>"; };
 		DD544B8320A5FDE800317F50 /* daft-punk-robot-rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "daft-punk-robot-rock.mp3"; sourceTree = "<group>"; };
 		DD544B8420A5FDEC00317F50 /* apollo-440-bout-dub.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "apollo-440-bout-dub.mp3"; sourceTree = "<group>"; };
-		DD544B8520A5FDF100317F50 /* apollo_440_-_stop_the_rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "apollo_440_-_stop_the_rock.mp3"; path = "../../../../Desktop/apollo_440_-_stop_the_rock.mp3"; sourceTree = "<group>"; };
 		DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sting-fields_of_gold.mp3"; sourceTree = "<group>"; };
 		DDD3235420C04D3900BE1971 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
 		DDD3235820C04DE500BE1971 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -90,21 +99,25 @@
 		DD30D58620A1BAA700460DBD /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				DDFC7F19209894CD006819D5 /* Main.storyboard */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DD500A5420D11DB800FFB72B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD500A5520D11DE200FFB72B /* Song.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DD544B7D20A59C8000317F50 /* Song */ = {
 			isa = PBXGroup;
 			children = (
-				DD544B8520A5FDF100317F50 /* apollo_440_-_stop_the_rock.mp3 */,
 				DD544B8420A5FDEC00317F50 /* apollo-440-bout-dub.mp3 */,
 				DD544B8320A5FDE800317F50 /* daft-punk-robot-rock.mp3 */,
 				DD544B8220A5FDD500317F50 /* apollo_440_-_stop_the_rock.mp3 */,
 				DD544B8020A5F37D00317F50 /* images.jpeg */,
-				DD544B7F20A59C9100317F50 /* sting-fields_of_gold.mp3 */,
-				DD544B7E20A59C8F00317F50 /* apollo_440_-_stop_the_rock.mp3 */,
 			);
 			name = Song;
 			sourceTree = "<group>";
@@ -128,6 +141,11 @@
 				DDD3235A20C04ECA00BE1971 /* DataRequest+Trakkers.swift */,
 				DDD3235C20C04F1B00BE1971 /* Endpoint.swift */,
 				DDD3235E20C04F5400BE1971 /* Manager+Trakkers.swift */,
+				DD500A5720D129C500FFB72B /* NSError+IPlayer.swift */,
+				DD500A5920D12DF100FFB72B /* Utils.swift */,
+				DD4920D920CFE979001D9138 /* APIManager.swift */,
+				DD4920DB20D021AC001D9138 /* ErrorManager.swift */,
+				DD500A5B20D12EF300FFB72B /* Constans.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -135,7 +153,6 @@
 		DDFC7F05209894CC006819D5 = {
 			isa = PBXGroup;
 			children = (
-				DDD3235320C04B7F00BE1971 /* API */,
 				DDFC7F10209894CD006819D5 /* IPlayer */,
 				DDFC7F0F209894CD006819D5 /* Products */,
 				5E9F4DE4029AC7C5AFEC2BE3 /* Pods */,
@@ -154,9 +171,12 @@
 		DDFC7F10209894CD006819D5 /* IPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				DD500A5420D11DB800FFB72B /* Model */,
+				DDD3235320C04B7F00BE1971 /* API */,
 				DDFC7F11209894CD006819D5 /* AppDelegate.swift */,
 				DDFC7F13209894CD006819D5 /* RootViewController.swift */,
 				DDFC7F17209894CD006819D5 /* ModelController.swift */,
+				DDFC7F19209894CD006819D5 /* Main.storyboard */,
 				DD544B8A20A5FEE800317F50 /* Controllers */,
 				DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */,
 				DD544B7D20A59C8000317F50 /* Song */,
@@ -291,14 +311,20 @@
 			files = (
 				DDD3235B20C04ECA00BE1971 /* DataRequest+Trakkers.swift in Sources */,
 				DDFC7F14209894CD006819D5 /* RootViewController.swift in Sources */,
+				DD500A5C20D12EF300FFB72B /* Constans.swift in Sources */,
+				DD4920DC20D021AC001D9138 /* ErrorManager.swift in Sources */,
 				DDD3235F20C04F5400BE1971 /* Manager+Trakkers.swift in Sources */,
 				DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */,
 				DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */,
 				DDFC7F18209894CD006819D5 /* ModelController.swift in Sources */,
 				DDFC7F16209894CD006819D5 /* DataViewController.swift in Sources */,
 				DDD3235520C04D3900BE1971 /* ApiResult.swift in Sources */,
+				DD500A5A20D12DF100FFB72B /* Utils.swift in Sources */,
+				DD500A5620D11DE200FFB72B /* Song.swift in Sources */,
 				DD4095BC209C5EFC0069E626 /* PlayerViewController.swift in Sources */,
 				DDD3235920C04DE500BE1971 /* APIService.swift in Sources */,
+				DD500A5820D129C500FFB72B /* NSError+IPlayer.swift in Sources */,
+				DD4920DA20CFE979001D9138 /* APIManager.swift in Sources */,
 				DDD3235D20C04F1B00BE1971 /* Endpoint.swift in Sources */,
 				DDFC7F12209894CD006819D5 /* AppDelegate.swift in Sources */,
 			);

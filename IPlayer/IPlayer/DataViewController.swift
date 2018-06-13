@@ -10,7 +10,6 @@ import UIKit
 
 class DataViewController: UIViewController {
 
-
     var dataObject: UIViewController?
 
     override func viewDidLoad() {
@@ -28,7 +27,5 @@ class DataViewController: UIViewController {
         
         //self.dataLabel!.text = dataObject
     }
-
-
 }
 
