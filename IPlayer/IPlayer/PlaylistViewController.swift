@@ -13,9 +13,7 @@ import PromiseKit
 class PlaylistViewController: UITableViewController{
     
     fileprivate let apiService = APIService.sharedInstance
-   //let track = 2
-    
-    
+
     @IBAction func SearchSong(_ sender: UIButton) {
         
         getTrackList()
@@ -28,13 +26,31 @@ class PlaylistViewController: UITableViewController{
         apiService.getAppLocation()
             .then { [weak self] json in
                 print("get current location: ", json)
-                if let value = json as? [String: Any],
-                    let title = value["title"] as? [String],
-                    let preview = value["level"] as? [String],
-                    let name = value["location_tree"] as? [String] {
-                    print("currentLocationID: ", title)
-                    print("currentLevelID: ", preview)
-                    print("currentLocationTree: ", name)
+                if let data = json as? [String: Any],
+                let arr = data["data"] as? [[String: Any]]
+                {
+                    
+                    for title in arr  {
+                        print ("FOR ||  !========:   !!!  \(title)!")
+                    }
+                    
+                    for preview in arr  {
+                        //print ("FOR  and  PREVIEW ||  !========:   !!!  \(preview)!")
+                    }
+// Пример !
+//                    let numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
+//                    for (animalName, legCount) in numberOfLegs {
+//                        print("\(animalName)s have \(legCount) legs")
+//                    }
+//                    // ants have 6 legs
+//                    // cats have 4 legs
+//                    // spiders have 8 legs
+                    
+                    
+                print("data: ||  ============: ", data)
+                print("arr: ||  ============: ", arr)
+                //print("currentLevelID: ", preview)
+                  //  print("currentLocationTree: ", name)
                     
                     //                        self?.title = title
                     //                        self?.preview = preview
@@ -51,7 +67,6 @@ class PlaylistViewController: UITableViewController{
     }
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,7 +74,6 @@ class PlaylistViewController: UITableViewController{
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewWillAppear(_ animated: Bool) {

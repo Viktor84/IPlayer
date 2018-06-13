@@ -14,16 +14,19 @@ import AVKit
 class PlayerViewController: UIViewController {
     
     
-    var player: AVPlayer?  //pjA81zY4QQmshef46JVPPON78KRNp1UjWhTjsn0JJz3yacI24f
+    var player: AVPlayer?  //pjA81zY4QQmshef46JVPPON78KRNp1UjWhTjsn0JJz3yacI24f ключь DEZER
     
     func playUsingAVPlayer(url: URL) {
         player = AVPlayer(url: url)
         player?.play()
     }
     
+    //guard let url = URL(string: "https://cdns-preview-5.dzcdn.net/stream/c-5197e65a6c91f81735c989c79d5b34e2-4.mp3")
+    //guard let url = URL(string: "https://cdns-preview-5.dzcdn.net/stream/c-5e1901acfc4d775652540d853f73d5dd-4.mp3")
+    
+    
     @IBAction func playRemoteFile(_ sender: UIButton) {
         guard let url = URL(string: "https://s3.ap-south-1.amazonaws.com/aksharpatel47-static/positive_attitude.mp3")
-        //guard let url = URL(string: "https://cdns-preview-5.dzcdn.net/stream/c-5197e65a6c91f81735c989c79d5b34e2-4.mp3")
             else {
             print("Invalid URL")
             return
@@ -42,18 +45,19 @@ class PlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let baseURL = URL(string: "https://deezerdevs-deezer.p.mashape.com/")
-        let fullURL = URL(string: "artist/1", relativeTo: baseURL)//URL(string: "artist/1", relativeTo: baseURL)//
-        
-        let sessionconfiguration = URLSessionConfiguration.default
-        let session = URLSession(configuration: sessionconfiguration)
-        
-        let request = URLRequest(url: fullURL!)
-        let dataTask = session.dataTask(with: fullURL!) { (data, response, error) in
-            
-        }
-        dataTask.resume()
+//        let baseURL = URL(string: "https://deezerdevs-deezer.p.mashape.com/")
+//        let fullURL = URL(string: "artist/1", relativeTo: baseURL)//URL(string: "artist/1", relativeTo: baseURL)//
+//
+//        let sessionconfiguration = URLSessionConfiguration.default
+//        let session = URLSession(configuration: sessionconfiguration)
+//
+//        let request = URLRequest(url: fullURL!)
+//        let dataTask = session.dataTask(with: fullURL!) { (data, response, error) in
+//
+//        }
+//        dataTask.resume()
     }
+    
         //Slider
         //sliderBoard.maximumValue = Float(player.duration)
         //var timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: Selector(("updateSlaider")), userInfo: nil, repeats: true)
@@ -116,10 +120,7 @@ class PlayerViewController: UIViewController {
                     }
                 }*/
         
-       
     
-
-        
         
     //do {
             //try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -207,7 +208,6 @@ class PlayerViewController: UIViewController {
     
     
 //    @IBAction func sliderAction(_ sender: Any) {
-//
 //        //player.stop()
 //       //player.currentTime = TimeInterval(sliderBoard.value)
 //        //player.prepareToPlay()
@@ -215,10 +215,8 @@ class PlayerViewController: UIViewController {
 //    }
 //
 //    func updateSlaider(){
-//
 //        //sliderBoard.value = Float(player.currentTime)
 //        NSLog("HI")
-//
 //    }
 //
 //    override func didReceiveMemoryWarning() {
