@@ -39,6 +39,7 @@ class PlaylistViewController: UITableViewController{
                     //let songDic = arr[0]
 
                     for dic in arr  {
+                        var i = 0
                         print ("FOR start ||  ! ============================  : ")
                         //print ("FOR ||  ! ======  : \(dic)!")
                             dic["title"]
@@ -70,6 +71,14 @@ class PlaylistViewController: UITableViewController{
                         print ("STRUCT  \(structSong.titleSong)!")
                         print ("STRUCT  \(structSong.idSong)!")
                         print ("STRUCT  \(structSong.previewSong)!")
+                        
+                        
+                        //arrSong.append["structSong.titleSong", "structSong.idSong", "structSong.previewSong"]
+                        arrSong.insert(contentsOf:[structSong], at: i)
+                        
+                        print ("STR REST   \(arrSong)")
+                        print ("STR current   \(arrSong[i])")
+                        
                         
                         
 //                        var arraySong = [structSong]

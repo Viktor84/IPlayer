@@ -26,7 +26,6 @@
 		DDD3235F20C04F5400BE1971 /* Manager+Trakkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235E20C04F5400BE1971 /* Manager+Trakkers.swift */; };
 		DDFC7F12209894CD006819D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F11209894CD006819D5 /* AppDelegate.swift */; };
 		DDFC7F14209894CD006819D5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F13209894CD006819D5 /* RootViewController.swift */; };
-		DDFC7F16209894CD006819D5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F15209894CD006819D5 /* DataViewController.swift */; };
 		DDFC7F18209894CD006819D5 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F17209894CD006819D5 /* ModelController.swift */; };
 		DDFC7F1B209894CD006819D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFC7F19209894CD006819D5 /* Main.storyboard */; };
 		DDFC7F1D209894CE006819D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFC7F1C209894CE006819D5 /* Assets.xcassets */; };
@@ -59,7 +58,6 @@
 		DDFC7F0E209894CD006819D5 /* IPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFC7F11209894CD006819D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDFC7F13209894CD006819D5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		DDFC7F15209894CD006819D5 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		DDFC7F17209894CD006819D5 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		DDFC7F1A209894CD006819D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDFC7F1C209894CE006819D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,13 +94,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DD30D58620A1BAA700460DBD /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		DD500A5420D11DB800FFB72B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +119,6 @@
 				DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */,
 				DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */,
 				DD4095BD209C647B0069E626 /* EqualizerViewController.swift */,
-				DDFC7F15209894CD006819D5 /* DataViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -180,7 +170,6 @@
 				DD544B8A20A5FEE800317F50 /* Controllers */,
 				DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */,
 				DD544B7D20A59C8000317F50 /* Song */,
-				DD30D58620A1BAA700460DBD /* New Group */,
 				DDFC7F1C209894CE006819D5 /* Assets.xcassets */,
 				DDFC7F1E209894CE006819D5 /* LaunchScreen.storyboard */,
 				DDFC7F21209894CE006819D5 /* Info.plist */,
@@ -317,7 +306,6 @@
 				DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */,
 				DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */,
 				DDFC7F18209894CD006819D5 /* ModelController.swift in Sources */,
-				DDFC7F16209894CD006819D5 /* DataViewController.swift in Sources */,
 				DDD3235520C04D3900BE1971 /* ApiResult.swift in Sources */,
 				DD500A5A20D12DF100FFB72B /* Utils.swift in Sources */,
 				DD500A5620D11DE200FFB72B /* Song.swift in Sources */,

@@ -67,7 +67,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
             return .min
         }
 
-        let currentViewController = self.pageViewController!.viewControllers![0] as! DataViewController 
+        let currentViewController = self.pageViewController!.viewControllers![0] //as! DataViewController
         var viewControllers: [UIViewController]
 
         let indexOfCurrentViewController = self.modelController.indexOfViewController(currentViewController)

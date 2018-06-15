@@ -30,7 +30,7 @@ enum Endpoint {
         
         switch self {
         case .appLocation:
-            return baseUrl + "/artist/1/top?limit=1"  // number = 50
+            return baseUrl + "/artist/1/top?limit=3"  // number = 50
         case .requestinfo:
             return baseUrl + "/leads"
         }
