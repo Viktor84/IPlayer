@@ -14,7 +14,9 @@ import AVKit
 class PlayerViewController: UIViewController {
     
     
-    var player: AVPlayer?  //pjA81zY4QQmshef46JVPPON78KRNp1UjWhTjsn0JJz3yacI24f ключь DEZER
+    //var player: AVPlayer?
+    //pjA81zY4QQmshef46JVPPON78KRNp1UjWhTjsn0JJz3yacI24f ключь DEZER
+    var player: AVPlayer?
     
     func playUsingAVPlayer(url: URL) {
         player = AVPlayer(url: url)
@@ -25,8 +27,11 @@ class PlayerViewController: UIViewController {
     //guard let url = URL(string: "https://cdns-preview-5.dzcdn.net/stream/c-5e1901acfc4d775652540d853f73d5dd-4.mp3")
     
     
+    
     @IBAction func playRemoteFile(_ sender: UIButton) {
         guard let url = URL(string: "https://s3.ap-south-1.amazonaws.com/aksharpatel47-static/positive_attitude.mp3")
+       // guard let url = URL(string: test)
+            
             else {
             print("Invalid URL")
             return

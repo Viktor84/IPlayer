@@ -9,3 +9,8 @@
 import Foundation
 
 
+struct Song {
+    var titleSong: String?
+    var idSong: String?
+    var previewSong: String?
+}

@@ -10,48 +10,82 @@ import Foundation
 import UIKit
 import PromiseKit
 
+var arrSong = [Song]()
+
 class PlaylistViewController: UITableViewController{
     
     fileprivate let apiService = APIService.sharedInstance
 
+ 
     @IBAction func SearchSong(_ sender: UIButton) {
-        
         getTrackList()
-         //let testReqest = Endpoint.appLocation
     }
+    
+//    @IBAction func SearchSong(_ sender: UIButton) {
+//        getTrackList() //let testReqest = Endpoint.appLocation
+//    }
+
+    
     
     
     func getTrackList() {
-        
         apiService.getAppLocation()
             .then { [weak self] json in
-                print("get current location: ", json)
+                //print("get current location: ", json)
                 if let data = json as? [String: Any],
                 let arr = data["data"] as? [[String: Any]]
+                    
                 {
-                    
-                    for title in arr  {
-                        print ("FOR ||  !========:   !!!  \(title)!")
+                    //let songDic = arr[0]
+
+                    for dic in arr  {
+                        print ("FOR start ||  ! ============================  : ")
+                        //print ("FOR ||  ! ======  : \(dic)!")
+                            dic["title"]
+                        print ("dic title === > \(dic["title"])!")
+                            dic["id"]
+                        print ("dic ID === > \(dic["id"])!")
+                        dic["preview"]
+                        print ("dic preview === > \(dic["preview"])!")
+                        print ("FOR end ||  ! ============================  : ")
+
+                        
+//                        struct Song {
+//                            var titleSong: String?
+//                            var idSong: String?
+//                            var previewSong: String?
+//                        }
+//                       
+                        //var arraySong = [Song]()
+                        //arraySong.titleSong = dic["title"] as? String
+                        //arraySong[0].idSong = dic["id"] as? String
+                        //arraySong[0].previewSong = (dic["preview"] as? String)
+                   
+                        var structSong = Song()
+                        
+                        structSong.titleSong = dic["title"] as? String
+                        structSong.idSong = dic["id"] as? String
+                        structSong.previewSong = dic["preview"] as? String
+
+                        print ("STRUCT  \(structSong.titleSong)!")
+                        print ("STRUCT  \(structSong.idSong)!")
+                        print ("STRUCT  \(structSong.previewSong)!")
+                        
+                        
+//                        var arraySong = [structSong]
+//                        arraySong[0].titleSong = dic["title"] as? String
+//                        arraySong[0].idSong = dic["id"] as? String
+//                        arraySong[0].previewSong = dic["preview"] as? String
+//
+//                        print ("STRUCT  \(arraySong[0].titleSong)!")
+//                        print ("STRUCT  \(arraySong[0].idSong)!")
+//                        print ("STRUCT  \(arraySong[0].previewSong)!")
                     }
-                    
-                    for preview in arr  {
-                        //print ("FOR  and  PREVIEW ||  !========:   !!!  \(preview)!")
-                    }
-// Пример !
-//                    let numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
-//                    for (animalName, legCount) in numberOfLegs {
-//                        print("\(animalName)s have \(legCount) legs")
-//                    }
-//                    // ants have 6 legs
-//                    // cats have 4 legs
-//                    // spiders have 8 legs
-                    
-                    
-                print("data: ||  ============: ", data)
-                print("arr: ||  ============: ", arr)
+                
+                    //print("data: ||  ============: ", data)
+                    //print("arr: ||  ============: ", arr)
                 //print("currentLevelID: ", preview)
                   //  print("currentLocationTree: ", name)
-                    
                     //                        self?.title = title
                     //                        self?.preview = preview
                     //                        self?.name = name
