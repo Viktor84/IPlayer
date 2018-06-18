@@ -10,7 +10,10 @@ import Foundation
 
 
 struct Song {
+    var pictureBig: String?
+    var titleShort: String?
+    var musicalGroup: String?
     var titleSong: String?
-    var idSong: String?
+    var idSong: Int?
     var previewSong: String?
 }

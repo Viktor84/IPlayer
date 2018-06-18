@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46E5C0F5DCF26AF84D0235EC /* Pods_IPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */; };
+		DD3FB14620D7AB3300BD8998 /* IPlayerTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FB14520D7AB3300BD8998 /* IPlayerTabelViewCell.swift */; };
 		DD4095BC209C5EFC0069E626 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */; };
 		DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BD209C647B0069E626 /* EqualizerViewController.swift */; };
 		DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */; };
@@ -36,6 +37,7 @@
 		404A2074E2C407495C5EA466 /* Pods-IPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8294B9596425A4919DC05827 /* Pods-IPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		DD3FB14520D7AB3300BD8998 /* IPlayerTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPlayerTabelViewCell.swift; sourceTree = "<group>"; };
 		DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		DD4095BD209C647B0069E626 /* EqualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
 		DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		DD544B8A20A5FEE800317F50 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DD3FB14520D7AB3300BD8998 /* IPlayerTabelViewCell.swift */,
 				DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */,
 				DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */,
 				DD4095BD209C647B0069E626 /* EqualizerViewController.swift */,
@@ -304,6 +307,7 @@
 				DD4920DC20D021AC001D9138 /* ErrorManager.swift in Sources */,
 				DDD3235F20C04F5400BE1971 /* Manager+Trakkers.swift in Sources */,
 				DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */,
+				DD3FB14620D7AB3300BD8998 /* IPlayerTabelViewCell.swift in Sources */,
 				DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */,
 				DDFC7F18209894CD006819D5 /* ModelController.swift in Sources */,
 				DDD3235520C04D3900BE1971 /* ApiResult.swift in Sources */,

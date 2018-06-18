@@ -21,7 +21,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController = UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
         self.pageViewController!.delegate = self
 
-        let startingViewController = self.modelController.viewControllerAtIndex(1, storyboard: self.storyboard!)!
+        let startingViewController = self.modelController.viewControllerAtIndex(1, storyboard: self.storyboard!)! // 1
         let viewControllers = [startingViewController]
         self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })
 
