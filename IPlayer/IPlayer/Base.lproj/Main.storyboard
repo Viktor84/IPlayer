@@ -201,20 +201,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgI-Ld-ppC">
-                                                    <rect key="frame" x="155" y="67" width="185" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgI-Ld-ppC">
+                                                    <rect key="frame" x="135" y="69" width="205" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLO-aJ-lkH">
-                                                    <rect key="frame" x="155" y="31" width="185" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLO-aJ-lkH">
+                                                    <rect key="frame" x="135" y="31" width="205" height="23"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xOi-KI-Q3i">
-                                                    <rect key="frame" x="35" y="31" width="100" height="100"/>
+                                                    <rect key="frame" x="25" y="21" width="100" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="PLD-K7-z8f"/>
                                                         <constraint firstAttribute="height" constant="100" id="Yze-Nl-tcu"/>
@@ -224,12 +224,12 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="jLO-aJ-lkH" secondAttribute="trailing" constant="20" id="4Sj-ez-jnj"/>
                                                 <constraint firstItem="jLO-aJ-lkH" firstAttribute="top" secondItem="lDi-RN-wvo" secondAttribute="topMargin" constant="20" id="6UO-wc-PSs"/>
-                                                <constraint firstItem="jLO-aJ-lkH" firstAttribute="leading" secondItem="xOi-KI-Q3i" secondAttribute="trailing" constant="20" id="78w-Zh-5c1"/>
-                                                <constraint firstItem="xOi-KI-Q3i" firstAttribute="leading" secondItem="lDi-RN-wvo" secondAttribute="leadingMargin" constant="20" id="Fwp-VG-fwB"/>
-                                                <constraint firstItem="fgI-Ld-ppC" firstAttribute="leading" secondItem="xOi-KI-Q3i" secondAttribute="trailing" constant="20" id="TlV-fH-JYD"/>
+                                                <constraint firstItem="jLO-aJ-lkH" firstAttribute="leading" secondItem="xOi-KI-Q3i" secondAttribute="trailing" constant="10" id="Jcw-U0-fR9"/>
+                                                <constraint firstItem="fgI-Ld-ppC" firstAttribute="leading" secondItem="xOi-KI-Q3i" secondAttribute="trailing" constant="10" id="P7A-X2-acn"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="fgI-Ld-ppC" secondAttribute="trailing" constant="20" id="WN5-kf-yDX"/>
                                                 <constraint firstItem="fgI-Ld-ppC" firstAttribute="top" secondItem="jLO-aJ-lkH" secondAttribute="bottom" constant="15" id="cpa-di-pQi"/>
-                                                <constraint firstItem="xOi-KI-Q3i" firstAttribute="top" secondItem="lDi-RN-wvo" secondAttribute="topMargin" constant="20" id="jiI-M0-A2G"/>
+                                                <constraint firstItem="xOi-KI-Q3i" firstAttribute="leading" secondItem="lDi-RN-wvo" secondAttribute="leadingMargin" constant="10" id="pyb-K7-MrZ"/>
+                                                <constraint firstItem="xOi-KI-Q3i" firstAttribute="top" secondItem="lDi-RN-wvo" secondAttribute="topMargin" constant="10" id="tEZ-fF-PiY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

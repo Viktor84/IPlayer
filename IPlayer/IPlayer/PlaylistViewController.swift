@@ -41,10 +41,6 @@ class PlaylistViewController: UIViewController{
                         artist!["name"]
                         print ("artist name == > \(artist!["name"])!")
                         
-//                                let contributors = dic["contributors"] as? [String: URL]
-//                                contributors!["picture_big"]
-//                                print ("contributors picture_big == > \(contributors!["picture_big"])!!!")
-//
                         let album = dic["album"] as? [String: Any]
                         album!["cover_big"]
                         print ("album cover_big === > \(album!["cover_big"]) !!!")

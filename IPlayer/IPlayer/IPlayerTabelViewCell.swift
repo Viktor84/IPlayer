@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class IPlayerTabelViewCell: UITableViewCell {
 
@@ -25,20 +26,14 @@ class IPlayerTabelViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configure(song: Song) {
-        
-       // cellDeviceType = deviceType
         musicalGroupLabel.text = song.musicalGroup
         songLabel.text = song.titleSong
-        //pictureBig.image = imageView.url
-        //var myImage =  UIImage(data: NSData(contentsOfURL: NSURL(string:"http://upload.wikimedia.org/wikipedia/en/4/43/Apple_Swift_Logo.png")))
-       
-        
-        
+        pictureBig.sd_setImage(with: URL(string: song.pictureBig!), placeholderImage: nil)
+    }
 
-    
-        
-        
-        //        equipmentImage.sd_setImage(with: URL(string: deviceType.logo), placeholderImage: nil)
+    func cancelCellImageLoad() {
+        pictureBig.sd_cancelCurrentImageLoad()
+        pictureBig.image = nil
     }
 
 }
