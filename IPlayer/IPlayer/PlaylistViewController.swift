@@ -12,10 +12,14 @@ import PromiseKit
 
 var arrSong = [Song]()
 
+protocol PlaylistViewControllerDelegate: class {
+    func moveToPlayerControler()
+}
+
 class PlaylistViewController: UIViewController{
     
     fileprivate let apiService = APIService.sharedInstance
-    
+    weak var delegate: PlaylistViewControllerDelegate?
 
     @IBOutlet weak var tabelView: UITableView!
     
@@ -120,8 +124,8 @@ class PlaylistViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    getTrackList()
-    tabelView.reloadData()
+        getTrackList()
+        tabelView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -146,8 +150,11 @@ extension PlaylistViewController: UITableViewDelegate {
         //arrSong.insert(itemToMove, at: destinationIndexPath.row)
         //coreDataManager.updateEquipmentOrders(arrDeviceType: deviceTypes)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.moveToPlayerControler()
+    }
 }
-
 
 extension PlaylistViewController: UITableViewDataSource {
     
@@ -166,7 +173,7 @@ extension PlaylistViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 135
+        return 140
     }
 }
 

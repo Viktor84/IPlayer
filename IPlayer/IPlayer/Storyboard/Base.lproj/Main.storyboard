@@ -202,13 +202,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgI-Ld-ppC">
-                                                    <rect key="frame" x="135" y="69" width="205" height="20.5"/>
+                                                    <rect key="frame" x="135" y="58" width="149" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLO-aJ-lkH">
-                                                    <rect key="frame" x="135" y="31" width="205" height="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLO-aJ-lkH">
+                                                    <rect key="frame" x="135" y="23" width="149" height="23"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -220,15 +220,25 @@
                                                         <constraint firstAttribute="height" constant="100" id="Yze-Nl-tcu"/>
                                                     </constraints>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvX-Z0-vD1">
+                                                    <rect key="frame" x="299" y="38" width="46" height="46"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="46" id="AU7-cP-DD8"/>
+                                                        <constraint firstAttribute="height" constant="46" id="xeX-om-qad"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="rewind8"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="jLO-aJ-lkH" secondAttribute="trailing" constant="20" id="4Sj-ez-jnj"/>
-                                                <constraint firstItem="jLO-aJ-lkH" firstAttribute="top" secondItem="lDi-RN-wvo" secondAttribute="topMargin" constant="20" id="6UO-wc-PSs"/>
+                                                <constraint firstItem="BvX-Z0-vD1" firstAttribute="top" secondItem="lDi-RN-wvo" secondAttribute="top" constant="38" id="ErT-Ys-JTq"/>
                                                 <constraint firstItem="jLO-aJ-lkH" firstAttribute="leading" secondItem="xOi-KI-Q3i" secondAttribute="trailing" constant="10" id="Jcw-U0-fR9"/>
                                                 <constraint firstItem="fgI-Ld-ppC" firstAttribute="leading" secondItem="xOi-KI-Q3i" secondAttribute="trailing" constant="10" id="P7A-X2-acn"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="fgI-Ld-ppC" secondAttribute="trailing" constant="20" id="WN5-kf-yDX"/>
-                                                <constraint firstItem="fgI-Ld-ppC" firstAttribute="top" secondItem="jLO-aJ-lkH" secondAttribute="bottom" constant="15" id="cpa-di-pQi"/>
+                                                <constraint firstItem="BvX-Z0-vD1" firstAttribute="leading" secondItem="jLO-aJ-lkH" secondAttribute="trailing" constant="15" id="WaT-Zk-vXT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BvX-Z0-vD1" secondAttribute="trailing" constant="15" id="WeX-o3-ORt"/>
+                                                <constraint firstItem="BvX-Z0-vD1" firstAttribute="leading" secondItem="fgI-Ld-ppC" secondAttribute="trailing" constant="15" id="Yh4-Zl-im0"/>
+                                                <constraint firstItem="fgI-Ld-ppC" firstAttribute="top" secondItem="jLO-aJ-lkH" secondAttribute="bottom" constant="12" id="gpT-Pa-det"/>
                                                 <constraint firstItem="xOi-KI-Q3i" firstAttribute="leading" secondItem="lDi-RN-wvo" secondAttribute="leadingMargin" constant="10" id="pyb-K7-MrZ"/>
+                                                <constraint firstItem="jLO-aJ-lkH" firstAttribute="top" secondItem="lDi-RN-wvo" secondAttribute="topMargin" constant="12" id="sxM-F3-1oW"/>
                                                 <constraint firstItem="xOi-KI-Q3i" firstAttribute="top" secondItem="lDi-RN-wvo" secondAttribute="topMargin" constant="10" id="tEZ-fF-PiY"/>
                                             </constraints>
                                         </tableViewCellContentView>

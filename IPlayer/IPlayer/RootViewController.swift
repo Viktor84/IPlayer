@@ -13,7 +13,10 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
     var pageViewController: UIPageViewController?
 
-
+    func initNotification() {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +52,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         if _modelController == nil {
             _modelController = ModelController()
         }
+        _modelController?.delegate = self
         return _modelController!
     }
 
@@ -90,5 +94,13 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 //    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
 //        return 0
 //    }
+}
+
+extension RootViewController: ModelControllerDelegate {
+    func moveToControler() {
+        print("RootViewController ====> turn page")
+    }
+    
+    
 }
 

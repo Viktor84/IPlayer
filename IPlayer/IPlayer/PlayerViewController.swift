@@ -14,14 +14,17 @@ import AVKit
 class PlayerViewController: UIViewController {
     
     
+    private let playerManager = PlayerManager.sharedInstance
+    var currentSong: Song? // TODO: pass song
+    
     //var player: AVPlayer?
     //pjA81zY4QQmshef46JVPPON78KRNp1UjWhTjsn0JJz3yacI24f ключь DEZER
-    var player: AVPlayer?
+    //var player: AVPlayer?
     
-    func playUsingAVPlayer(url: URL) {
-        player = AVPlayer(url: url)
-        player?.play()
-    }
+//    func playUsingAVPlayer(url: URL) {
+//        player = AVPlayer(url: url)
+//        player?.play()
+//    }
     
     //guard let url = URL(string: "https://cdns-preview-5.dzcdn.net/stream/c-5197e65a6c91f81735c989c79d5b34e2-4.mp3")
     //guard let url = URL(string: "https://cdns-preview-5.dzcdn.net/stream/c-5e1901acfc4d775652540d853f73d5dd-4.mp3")
@@ -36,7 +39,9 @@ class PlayerViewController: UIViewController {
             print("Invalid URL")
             return
         }
-        playUsingAVPlayer(url: url)
+        // TODO: init with song
+        playerManager.start()
+        //playUsingAVPlayer(url: url)
     }
     
      

@@ -8,9 +8,13 @@
 
 import UIKit
 
+protocol ModelControllerDelegate: class {
+    func moveToControler()
+}
 
 class ModelController: NSObject {
 
+    weak var delegate: ModelControllerDelegate?
     var pageData: [UIViewController] = []
 
 
@@ -38,12 +42,14 @@ class ModelController: NSObject {
          
          case  1:
             let playerViewController = storyboard.instantiateViewController(withIdentifier: "PlayerViewController") as! PlayerViewController
-         
+           
+            
          return playerViewController
          
          case 2:
             let playlistViewController = storyboard.instantiateViewController(withIdentifier: "PlaylistViewController") as! PlaylistViewController
-
+            playlistViewController.delegate = self
+            
          return playlistViewController
          
          default:
@@ -100,6 +106,14 @@ class ModelController: NSObject {
 //    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
 //        return 0
 //    }
+    
+}
+
+extension ModelController: PlaylistViewControllerDelegate {
+    func moveToPlayerControler() {
+        delegate?.moveToControler() // index
+    }
+    
     
 }
 
