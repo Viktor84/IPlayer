@@ -18,6 +18,7 @@ protocol PlaylistViewControllerDelegate: class {
 
 class PlaylistViewController: UIViewController{
     
+    private let playerManager = PlayerManager.sharedInstance
     fileprivate let apiService = APIService.sharedInstance
     weak var delegate: PlaylistViewControllerDelegate?
 
@@ -37,7 +38,7 @@ class PlaylistViewController: UIViewController{
                     
                 {
                     for dic in arr  {
-                        var i = 0
+                       // var i = 0
                         print ("FOR start ||  ! ============================  : ")
                         print ("FOR ||  ! ======  : \(dic)!")
                        
@@ -81,11 +82,11 @@ class PlaylistViewController: UIViewController{
                         structSong.idSong = dic["id"] as? Int
                         structSong.previewSong = dic["preview"] as? String
 
-                        print ("STRUCT  \(structSong.titleShort)!")
-                        print ("STRUCT  \(structSong.musicalGroup)!")
-                        print ("STRUCT  \(structSong.titleSong)!")
-                        print ("STRUCT  \(structSong.idSong)!")
-                        print ("STRUCT  \(structSong.previewSong)!")
+//                        print ("STRUCT  \(structSong.titleShort)!")
+//                        print ("STRUCT  \(structSong.musicalGroup)!")
+//                        print ("STRUCT  \(structSong.titleSong)!")
+//                        print ("STRUCT  \(structSong.idSong)!")
+//                        print ("STRUCT  \(structSong.previewSong)!")
                         
                    
                         //arrSong.insert(contentsOf:[structSong], at: i)
@@ -152,7 +153,7 @@ extension PlaylistViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.moveToPlayerControler()
+
     }
 }
 
@@ -165,7 +166,7 @@ extension PlaylistViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! IPlayerTabelViewCell
-        
+        cell.delegate = self
         let curentSongLabel = arrSong[indexPath.row]
         cell.configure(song:curentSongLabel)
         
@@ -177,3 +178,11 @@ extension PlaylistViewController: UITableViewDataSource {
     }
 }
 
+extension PlaylistViewController: IPlayerTabelViewCellDelegate {
+    func playSong(song: Song) {
+        playerManager.playWithSong(song: song)
+        delegate?.moveToPlayerControler()
+    }
+    
+    
+}

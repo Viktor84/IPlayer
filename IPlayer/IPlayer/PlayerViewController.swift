@@ -30,44 +30,53 @@ class PlayerViewController: UIViewController {
     //guard let url = URL(string: "https://cdns-preview-5.dzcdn.net/stream/c-5e1901acfc4d775652540d853f73d5dd-4.mp3")
     
     
-    
     @IBAction func playRemoteFile(_ sender: UIButton) {
-        guard let url = URL(string: "https://s3.ap-south-1.amazonaws.com/aksharpatel47-static/positive_attitude.mp3")
-       // guard let url = URL(string: test)
-            
-            else {
-            print("Invalid URL")
-            return
-        }
+//        guard let url = URL(string: "https://s3.ap-south-1.amazonaws.com/aksharpatel47-static/positive_attitude.mp3")
+//            else {
+//            print("Invalid URL")
+//            return
+//        }
         // TODO: init with song
         playerManager.start()
+        playStopButton.setImage(#imageLiteral(resourceName: "pause"), for: UIControlState.normal)
         //playUsingAVPlayer(url: url)
     }
     
-     
-
+    
     @IBOutlet weak var playStopButton: UIButton!
     @IBOutlet weak var sliderBoard: UISlider!
     //var player = AVAudioPlayer()
     var slider = UISlider()
-    //var playMusic = false
+    var playMusic = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 //        let baseURL = URL(string: "https://deezerdevs-deezer.p.mashape.com/")
 //        let fullURL = URL(string: "artist/1", relativeTo: baseURL)//URL(string: "artist/1", relativeTo: baseURL)//
-//
 //        let sessionconfiguration = URLSessionConfiguration.default
 //        let session = URLSession(configuration: sessionconfiguration)
-//
 //        let request = URLRequest(url: fullURL!)
 //        let dataTask = session.dataTask(with: fullURL!) { (data, response, error) in
-//
 //        }
 //        dataTask.resume()
     }
     
+    
+  @IBAction func playButton(_ sender: Any) {
+    if (playMusic == false) {
+        playerManager.start()
+        playMusic = true
+        playStopButton.setImage(#imageLiteral(resourceName: "pause"), for: UIControlState.normal)
+            } else {
+            if (playMusic == true) {
+                playerManager.pause()
+                playMusic = false
+                playStopButton.setImage(#imageLiteral(resourceName: "rewind8"), for: UIControlState.normal)
+        }
+    }
+ }
+    
+
         //Slider
         //sliderBoard.maximumValue = Float(player.duration)
         //var timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: Selector(("updateSlaider")), userInfo: nil, repeats: true)
@@ -80,14 +89,11 @@ class PlayerViewController: UIViewController {
                 //try audioSession.setCategory(AVAudioSessionCategoryPlayback)
                 } catch{
                     }*/
-                
             }
         } catch {
             print ("ERROR!")
         }
        */
-        
-        //NSLog ("   ||   PlayerViewController")
         
         //    || WORK Version !
 //        do {
@@ -163,20 +169,7 @@ class PlayerViewController: UIViewController {
     //sliderBoard.maximumValue = Float(player.duration)
 //    }
 //    
-    
-    /*do {
-    try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-    print("AVAudioSession Category Playback OK")
-    do {
-    try AVAudioSession.sharedInstance().setActive(true)
-    print("AVAudio is Active")
-    } catch let error as NSError {
-    print(error.localizedDescription)
-    } catch let error as NSError {
-    print(error.localizedDescription)
-    }
-    }*/
-    
+
     
     //MARK: - ACtion
    /* @IBAction func playButton(_ sender: Any) {
@@ -199,9 +192,6 @@ class PlayerViewController: UIViewController {
 //        }
 //    }
 //
-//
-//
-//
 ////        if (playMusic == false) {
 //            self.player.play()
 //            playMusic = true
@@ -218,6 +208,7 @@ class PlayerViewController: UIViewController {
     
     
 //    @IBAction func sliderAction(_ sender: Any) {
+//}
 //        //player.stop()
 //       //player.currentTime = TimeInterval(sliderBoard.value)
 //        //player.prepareToPlay()
@@ -229,12 +220,12 @@ class PlayerViewController: UIViewController {
 //        NSLog("HI")
 //    }
 //
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//    }
-//
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//    }
-//
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
 }

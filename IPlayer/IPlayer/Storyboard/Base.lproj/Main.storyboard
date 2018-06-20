@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hdm-A7-AQ7">
-                                <rect key="frame" x="53" y="510" width="269" height="30"/>
+                                <rect key="frame" x="53" y="503" width="269" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="NaR-M4-9Ws"/>
                                 </constraints>
@@ -78,7 +78,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="rewind8"/>
                                 <connections>
-                                    <action selector="playStop:" destination="2wJ-qM-Jra" eventType="touchUpInside" id="bix-dw-ZxF"/>
+                                    <action selector="playButton:" destination="2wJ-qM-Jra" eventType="touchUpInside" id="eww-Z0-4Ry"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crb-MW-E2a">
@@ -104,7 +104,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Tqm-tN-Lpy" firstAttribute="trailing" secondItem="4jJ-9U-cJK" secondAttribute="trailing" id="0vu-bL-lQX"/>
-                            <constraint firstItem="vlL-5V-489" firstAttribute="top" secondItem="hdm-A7-AQ7" secondAttribute="bottom" constant="8" id="35i-kA-ERc"/>
                             <constraint firstItem="Tqm-tN-Lpy" firstAttribute="top" secondItem="4jJ-9U-cJK" secondAttribute="bottom" constant="30" id="6bZ-ls-pMO"/>
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="top" secondItem="Cho-zW-bPl" secondAttribute="top" id="6jj-Ay-XJJ"/>
                             <constraint firstItem="hwd-gv-ivh" firstAttribute="top" secondItem="4jJ-9U-cJK" secondAttribute="bottom" id="FzQ-e7-Biu"/>
@@ -115,6 +114,7 @@
                             <constraint firstItem="Cho-zW-bPl" firstAttribute="bottom" secondItem="9H6-ta-wHl" secondAttribute="bottom" constant="69" id="S4o-pH-LRg"/>
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="top" secondItem="Cho-zW-bPl" secondAttribute="top" id="SYL-1X-wZ3"/>
                             <constraint firstItem="vlL-5V-489" firstAttribute="centerX" secondItem="XKt-yR-RfA" secondAttribute="centerX" id="Ssv-Qv-caV"/>
+                            <constraint firstItem="vlL-5V-489" firstAttribute="top" secondItem="hdm-A7-AQ7" secondAttribute="bottom" constant="15" id="Szi-z6-vDh"/>
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="leading" secondItem="Cho-zW-bPl" secondAttribute="leading" id="UiU-gZ-xZQ"/>
                             <constraint firstItem="Cho-zW-bPl" firstAttribute="trailing" secondItem="hdm-A7-AQ7" secondAttribute="trailing" constant="55" id="YHb-Eg-EYD"/>
                             <constraint firstItem="9H6-ta-wHl" firstAttribute="leading" secondItem="vlL-5V-489" secondAttribute="trailing" constant="14" id="ZdX-Vs-6Hc"/>
@@ -141,7 +141,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="3x2-Sy-Vyb"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="playStopButton" destination="vlL-5V-489" id="c1e-59-sqY"/>
+                        <outlet property="playStopButton" destination="vlL-5V-489" id="s0z-Ji-C6S"/>
                         <outlet property="sliderBoard" destination="hdm-A7-AQ7" id="f0V-qN-6Jl"/>
                     </connections>
                 </viewController>
@@ -227,6 +227,9 @@
                                                         <constraint firstAttribute="height" constant="46" id="xeX-om-qad"/>
                                                     </constraints>
                                                     <state key="normal" title="Button" image="rewind8"/>
+                                                    <connections>
+                                                        <action selector="onPlayClick:" destination="3EM-TJ-w5H" eventType="touchUpInside" id="XsZ-ep-KXb"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
