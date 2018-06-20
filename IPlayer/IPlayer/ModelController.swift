@@ -13,51 +13,51 @@ protocol ModelControllerDelegate: class {
 }
 
 class ModelController: NSObject {
-
+    
     weak var delegate: ModelControllerDelegate?
     var pageData: [UIViewController] = []
-
-
+    var indexCarentViewController = 0
+    
     override init() {
         super.init()
     }
 }
 
-    extension ModelController: UIPageViewControllerDataSource {
+extension ModelController: UIPageViewControllerDataSource {
     
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> UIViewController? {
         
-       // if (self.pageData.count == 0) || (index >= self.pageData.count) { //прорверка
+        // if (self.pageData.count == 0) || (index >= self.pageData.count) { //прорверка
         //    return nil
         //}
         
-        let indexCarentViewController = index  //[0, 1, 2]
+        indexCarentViewController = index  //[0, 1, 2]
         
-         switch  indexCarentViewController {
-         
-         case  0 :
-            let equalizerViewController = storyboard.instantiateViewController(withIdentifier: "EqualizerViewController") as! EqualizerViewController
-         
-         return equalizerViewController
-         
-         case  1:
-            let playerViewController = storyboard.instantiateViewController(withIdentifier: "PlayerViewController") as! PlayerViewController
-           
+        switch  indexCarentViewController {
             
-         return playerViewController
-         
-         case 2:
+        case  0 :
+            let equalizerViewController = storyboard.instantiateViewController(withIdentifier: "EqualizerViewController") as! EqualizerViewController
+            
+            return equalizerViewController
+            
+        case  1:
+            let playerViewController = storyboard.instantiateViewController(withIdentifier: "PlayerViewController") as! PlayerViewController
+            
+            
+            return playerViewController
+            
+        case 2:
             let playlistViewController = storyboard.instantiateViewController(withIdentifier: "PlaylistViewController") as! PlaylistViewController
             playlistViewController.delegate = self
             
-         return playlistViewController
-         
-         default:
-         return nil
-         }
+            return playlistViewController
+            
+        default:
+            return nil
+        }
     }
-
-
+    
+    
     func indexOfViewController(_ viewController: UIViewController) -> Int {
         // Return the index of the given data view controller.
         // Верните индекс данного контроллера представления данных.
@@ -76,9 +76,9 @@ class ModelController: NSObject {
         
         return NSNotFound
     }
-
+    
     // MARK: - Page View Controller Data Source
-
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         var index = self.indexOfViewController(viewController)
         if (index == 0) || (index == NSNotFound) {
@@ -88,7 +88,7 @@ class ModelController: NSObject {
         index -= 1
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
     }
-
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         var index = self.indexOfViewController(viewController)
         if index == NSNotFound {
@@ -97,21 +97,21 @@ class ModelController: NSObject {
         
         index += 1
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
-        }
-
-//    func presentationCount(for pageViewController: UIPageViewController) -> Int {
-//      return pageData.count
-//    }
-//    
-//    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-//        return 0
-//    }
+    }
+    
+    //    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+    //      return pageData.count
+    //    }
+    //
+    //    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+    //        return 0
+    //    }
     
 }
 
 extension ModelController: PlaylistViewControllerDelegate {
     func moveToPlayerControler() {
-        delegate?.moveToControler() // index
+        delegate?.moveToControler()
     }
     
     

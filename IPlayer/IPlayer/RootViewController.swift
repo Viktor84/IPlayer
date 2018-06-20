@@ -86,7 +86,6 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
         return .mid
     }
-
 //    func presentationCount(for pageViewController: UIPageViewController) -> Int {
 //        return 2
 //    }
@@ -94,13 +93,38 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 //    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
 //        return 0
 //    }
+
+    
+    private func slideToPage(index: Int, completion: (() -> Void)?) {
+        let count = 3 //Function to get number of viewControllers
+        let currentPageIndex = self.modelController.indexCarentViewController
+        if index < count {
+            if index > currentPageIndex {
+                if let vc = self.modelController.viewControllerAtIndex(index, storyboard: self.storyboard!) {
+                    self.pageViewController?.setViewControllers([vc], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: { (complete) -> Void in
+                        //self.currentPageIndex = index
+                        completion?()
+                    })
+                }
+            } else if index < currentPageIndex {
+                if let vc = self.modelController.viewControllerAtIndex(index, storyboard: self.storyboard!) {
+                    self.pageViewController?.setViewControllers([vc], direction: UIPageViewControllerNavigationDirection.reverse, animated: true, completion: { (complete) -> Void in
+                        //self.currentPageIndex = index
+                        completion?()
+                    })
+                }
+            }
+        }
+    }
 }
 
 extension RootViewController: ModelControllerDelegate {
     func moveToControler() {
         print("RootViewController ====> turn page")
+        
+        slideToPage(index: 1, completion: {
+            print("RootViewController ====> ura")
+        })
     }
-    
-    
 }
 
