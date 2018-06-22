@@ -13,7 +13,7 @@ protocol IPlayerTabelViewCellDelegate: class {
     func playSong(song: Song)
 }
 class IPlayerTabelViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var musicalGroupLabel: UILabel!
     @IBOutlet weak var songLabel: UILabel!
     
@@ -24,33 +24,39 @@ class IPlayerTabelViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
+    
+    
     func configure(song: Song) {
         currentSong = song
         musicalGroupLabel.text = song.musicalGroup
         songLabel.text = song.titleSong
-        pictureBig.sd_setImage(with: URL(string: song.pictureBig!), placeholderImage: nil)
+        
+        if let _pictureBig = song.pictureBig  {
+            pictureBig.sd_setImage(with: URL(string: _pictureBig), placeholderImage: UIImage(named: "placeholder"))
+        } else {
+            pictureBig.image = UIImage(named: "placeholder")
+        }
     }
-
+    
+    
     func cancelCellImageLoad() {
         pictureBig.sd_cancelCurrentImageLoad()
         pictureBig.image = nil
     }
+    
     
     @IBAction func onPlayClick(_ sender: UIButton) {
         guard let _song = currentSong else {
             return
         }
         delegate?.playSong(song: _song)
-        //PlayerViewController.playStopButton
+        
         
     }
-
+    
 }

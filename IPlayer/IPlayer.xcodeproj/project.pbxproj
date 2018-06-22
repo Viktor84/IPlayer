@@ -8,19 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		46E5C0F5DCF26AF84D0235EC /* Pods_IPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */; };
+		DC3904FC20DB3A9C009CCD1B /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3904FB20DB3A9C009CCD1B /* placeholder.png */; };
 		DD3FB14620D7AB3300BD8998 /* IPlayerTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FB14520D7AB3300BD8998 /* IPlayerTabelViewCell.swift */; };
 		DD4095BC209C5EFC0069E626 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */; };
 		DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BD209C647B0069E626 /* EqualizerViewController.swift */; };
 		DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */; };
-		DD4920DA20CFE979001D9138 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4920D920CFE979001D9138 /* APIManager.swift */; };
-		DD4920DC20D021AC001D9138 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4920DB20D021AC001D9138 /* ErrorManager.swift */; };
 		DD500A5620D11DE200FFB72B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD500A5520D11DE200FFB72B /* Song.swift */; };
 		DD500A5820D129C500FFB72B /* NSError+IPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD500A5720D129C500FFB72B /* NSError+IPlayer.swift */; };
 		DD500A5A20D12DF100FFB72B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD500A5920D12DF100FFB72B /* Utils.swift */; };
-		DD500A5C20D12EF300FFB72B /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD500A5B20D12EF300FFB72B /* Constans.swift */; };
 		DD53F54820D93F9900FE5211 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53F54720D93F9900FE5211 /* PlayerManager.swift */; };
 		DD544B8120A5F37D00317F50 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DD544B8020A5F37D00317F50 /* images.jpeg */; };
 		DD544B8920A5FEAE00317F50 /* sting-fields_of_gold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */; };
+		DDB6257220DD056F004051FF /* apple_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB6257120DD056F004051FF /* apple_iphone.png */; };
 		DDD3235520C04D3900BE1971 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235420C04D3900BE1971 /* ApiResult.swift */; };
 		DDD3235920C04DE500BE1971 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235820C04DE500BE1971 /* APIService.swift */; };
 		DDD3235B20C04ECA00BE1971 /* DataRequest+Trakkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235A20C04ECA00BE1971 /* DataRequest+Trakkers.swift */; };
@@ -38,22 +37,21 @@
 		404A2074E2C407495C5EA466 /* Pods-IPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8294B9596425A4919DC05827 /* Pods-IPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		DC3904FB20DB3A9C009CCD1B /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		DD3FB14520D7AB3300BD8998 /* IPlayerTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPlayerTabelViewCell.swift; sourceTree = "<group>"; };
 		DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		DD4095BD209C647B0069E626 /* EqualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
 		DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
-		DD4920D920CFE979001D9138 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		DD4920DB20D021AC001D9138 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 		DD500A5520D11DE200FFB72B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		DD500A5720D129C500FFB72B /* NSError+IPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+IPlayer.swift"; sourceTree = "<group>"; };
 		DD500A5920D12DF100FFB72B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		DD500A5B20D12EF300FFB72B /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		DD53F54720D93F9900FE5211 /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
 		DD544B8020A5F37D00317F50 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		DD544B8220A5FDD500317F50 /* apollo_440_-_stop_the_rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "apollo_440_-_stop_the_rock.mp3"; sourceTree = "<group>"; };
 		DD544B8320A5FDE800317F50 /* daft-punk-robot-rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "daft-punk-robot-rock.mp3"; sourceTree = "<group>"; };
 		DD544B8420A5FDEC00317F50 /* apollo-440-bout-dub.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "apollo-440-bout-dub.mp3"; sourceTree = "<group>"; };
 		DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sting-fields_of_gold.mp3"; sourceTree = "<group>"; };
+		DDB6257120DD056F004051FF /* apple_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple_iphone.png; sourceTree = "<group>"; };
 		DDD3235420C04D3900BE1971 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
 		DDD3235820C04DE500BE1971 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		DDD3235A20C04ECA00BE1971 /* DataRequest+Trakkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Trakkers.swift"; sourceTree = "<group>"; };
@@ -98,6 +96,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DC3904FA20DB3A4A009CCD1B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DC3904FB20DB3A9C009CCD1B /* placeholder.png */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		DD500A5420D11DB800FFB72B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				DD544B8420A5FDEC00317F50 /* apollo-440-bout-dub.mp3 */,
+				DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */,
 				DD544B8320A5FDE800317F50 /* daft-punk-robot-rock.mp3 */,
 				DD544B8220A5FDD500317F50 /* apollo_440_-_stop_the_rock.mp3 */,
 				DD544B8020A5F37D00317F50 /* images.jpeg */,
@@ -153,6 +160,14 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		DDB6256E20DD0248004051FF /*  image */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6257120DD056F004051FF /* apple_iphone.png */,
+			);
+			name = " image";
+			sourceTree = "<group>";
+		};
 		DDD3235320C04B7F00BE1971 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,9 +178,6 @@
 				DDD3235E20C04F5400BE1971 /* Manager+Trakkers.swift */,
 				DD500A5720D129C500FFB72B /* NSError+IPlayer.swift */,
 				DD500A5920D12DF100FFB72B /* Utils.swift */,
-				DD4920D920CFE979001D9138 /* APIManager.swift */,
-				DD4920DB20D021AC001D9138 /* ErrorManager.swift */,
-				DD500A5B20D12EF300FFB72B /* Constans.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -191,6 +203,7 @@
 		DDFC7F10209894CD006819D5 /* IPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				DC3904FA20DB3A4A009CCD1B /* Sources */,
 				DD53F54A20D96CD000FE5211 /* Storyboard */,
 				DD53F54920D96C9800FE5211 /* View */,
 				DD53F54620D93F7800FE5211 /* Utils */,
@@ -198,7 +211,7 @@
 				DDD3235320C04B7F00BE1971 /* API */,
 				DDFC7F11209894CD006819D5 /* AppDelegate.swift */,
 				DD544B8A20A5FEE800317F50 /* Controllers */,
-				DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */,
+				DDB6256E20DD0248004051FF /*  image */,
 				DD544B7D20A59C8000317F50 /* Song */,
 				DDFC7F1C209894CE006819D5 /* Assets.xcassets */,
 				DDFC7F1E209894CE006819D5 /* LaunchScreen.storyboard */,
@@ -273,10 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDFC7F20209894CE006819D5 /* LaunchScreen.storyboard in Resources */,
+				DC3904FC20DB3A9C009CCD1B /* placeholder.png in Resources */,
 				DDFC7F1D209894CE006819D5 /* Assets.xcassets in Resources */,
 				DDFC7F1B209894CD006819D5 /* Main.storyboard in Resources */,
 				DD544B8120A5F37D00317F50 /* images.jpeg in Resources */,
 				DD544B8920A5FEAE00317F50 /* sting-fields_of_gold.mp3 in Resources */,
+				DDB6257220DD056F004051FF /* apple_iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +347,6 @@
 			files = (
 				DDD3235B20C04ECA00BE1971 /* DataRequest+Trakkers.swift in Sources */,
 				DDFC7F14209894CD006819D5 /* RootViewController.swift in Sources */,
-				DD500A5C20D12EF300FFB72B /* Constans.swift in Sources */,
-				DD4920DC20D021AC001D9138 /* ErrorManager.swift in Sources */,
 				DDD3235F20C04F5400BE1971 /* Manager+Trakkers.swift in Sources */,
 				DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */,
 				DD3FB14620D7AB3300BD8998 /* IPlayerTabelViewCell.swift in Sources */,
@@ -346,7 +359,6 @@
 				DDD3235920C04DE500BE1971 /* APIService.swift in Sources */,
 				DD500A5820D129C500FFB72B /* NSError+IPlayer.swift in Sources */,
 				DD53F54820D93F9900FE5211 /* PlayerManager.swift in Sources */,
-				DD4920DA20CFE979001D9138 /* APIManager.swift in Sources */,
 				DDD3235D20C04F1B00BE1971 /* Endpoint.swift in Sources */,
 				DDFC7F12209894CD006819D5 /* AppDelegate.swift in Sources */,
 			);

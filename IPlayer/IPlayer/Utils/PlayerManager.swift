@@ -13,7 +13,12 @@ import AVKit
 class PlayerManager {
     
     static let sharedInstance = PlayerManager()
-    private var currentSong: Song?
+    private var _currentSong: Song?
+    var currentSong: Song? {
+        get {
+            return _currentSong
+        }
+    }
     private var player: AVPlayer?
     
     
@@ -22,63 +27,51 @@ class PlayerManager {
     }
     
     func playWithSong(song: Song) {
-        currentSong = song
+        _currentSong = song
         start()
     }
   
     func initWithSong(song: Song) {
-        currentSong = song
-        print ("RAKETA Song \(String(describing: song.previewSong))")
-        //print ("RAKETA Song \(( currentSong?.previewSong))")
-        //self.currentPlaySong = song
-        //urlSE = URL(string: (currentSong?.previewSong)!)
+        _currentSong = song
     }
     
     func start() {
-        guard let _song = currentSong else {
+        guard let _song = _currentSong else {
             return
         }
-//        guard let url = URL(string: "https://s3.ap-south-1.amazonaws.com/aksharpatel47-static/positive_attitude.mp3")
-//            else {
-//            return
-//        }
+ 
         let url = URL(string: _song.previewSong!)
         
         player = AVPlayer(url: url!)
         player?.play()
     }
     
+    func continuePlay() {
+        player?.play()
+    }
     
     func pause() {
         player?.pause()
     }
     
+    func isPlaying() -> Bool {
+        return player?.timeControlStatus == AVPlayerTimeControlStatus.playing || player?.timeControlStatus == AVPlayerTimeControlStatus.waitingToPlayAtSpecifiedRate
+    }
+    
+    func isPaused() -> Bool {
+        return player?.timeControlStatus == AVPlayerTimeControlStatus.paused
+    }
     
     func stop() {
-        currentSong = nil
-        //player?.
+        _currentSong = nil
+        player?.pause()
+        player = nil
     }
 }
 
-//@IBAction func pauseButton(_ sender: Any) {
-//        if (playMusic == true) {
-//           // playMusic = false
-//            //self.player.pause()
-//        }
-//    }
-//
-////        if (playMusic == false) {
-//            self.player.play()
-//            playMusic = true
-//            playStopButton.setImage(#imageLiteral(resourceName: "pause"), for: UIControlState.normal)
-//        } else {
-//            if (playMusic == true) {  // <--
-//                self.player.pause()
-//                playMusic = false
-//                playStopButton.setImage(#imageLiteral(resourceName: "rewind8"), for: UIControlState.normal)
-//            }
-//        }
-//    }
+
+
+
 
 
 

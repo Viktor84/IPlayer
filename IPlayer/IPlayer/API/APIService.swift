@@ -27,12 +27,9 @@ class APIService {
     
     
     @discardableResult
-    func getAppLocation() -> Promise<[String: Any]?> {
-        
-        
-        return manager.apiRequest(endpoint: .appLocation, parameters: nil).apiResponse()
+    func getTrackList(index: Int) -> Promise<[String: Any]?> {
+        return manager.apiRequest(endpoint: .getTrackList(index: index), parameters: nil).apiResponse()
             .then { [weak self] json in
-                print("API appLocation json: \(json)")
                 if let data = json as? [String: Any] {
                     return Promise(value: data)
                 }
@@ -44,11 +41,8 @@ class APIService {
     }
     
     func requestInfo(name: String, organization: String, email: String, phone: String) -> Promise<[String: Any]?> {
-        
-        
-        return manager.apiRequest(endpoint: .requestinfo, parameters: nil, accessToken: Constants.accessToken).apiResponse()
+        return manager.apiRequest(endpoint: .requestinfo, parameters: nil, accessToken: nil).apiResponse()
             .then { [weak self] json in
-                print("API appLocation json: \(json)")
                 if let data = json as? [String: Any] {
                     return Promise(value: data)
                 }

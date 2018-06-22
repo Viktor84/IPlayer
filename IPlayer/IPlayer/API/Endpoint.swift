@@ -9,30 +9,37 @@
 import Foundation
 import Alamofire
 
+
+var flag = true
+var currentIndex: Int = 6
+
 enum Endpoint {
-    case appLocation
+    case getTrackList(index: Int)
     case requestinfo
     
     // MARK: - Public Properties
     var method: HTTPMethod {
         switch self {
-        case .appLocation,
+        case .getTrackList,
              .requestinfo:
             return .get
         }
     }
+    
     
     //TODO: NSURL.getBaseUrl() depends on dev/prod
     var url: String {
         
         let baseUrl = "https://api.deezer.com"
         
-        
         switch self {
-        case .appLocation:
-            return baseUrl + "/artist/1/top?limit=20"  // number = 50
+        case .getTrackList(let index):
+            return baseUrl + "/artist/\(index)/top?limit=50"
         case .requestinfo:
             return baseUrl + "/leads"
         }
     }
+    
+    
+    
 }

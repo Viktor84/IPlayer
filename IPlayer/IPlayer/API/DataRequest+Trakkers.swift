@@ -22,7 +22,7 @@ extension DataRequest {
                 }
                 
                 switch statusCode {
-                case ErrorType.success.rawValue, ErrorType.nocontent.rawValue:
+                case ErrorType.success.rawValue:
                     completion(ApiResult{ return response.result.value })
                 default:
                     
@@ -47,9 +47,7 @@ extension Alamofire.DataRequest {
                 } else if let response = rsp.response, let data = rsp.data {
                     
                     switch response.statusCode {
-                    case ErrorType.success.rawValue,
-                         ErrorType.nocontent.rawValue,
-                         ErrorType.successRequestInfo.rawValue:
+                    case ErrorType.success.rawValue:
                         let json = try? JSONSerialization.jsonObject(with: data, options: [])
                         print("JSON data response: ", json)
                         fulfill(json)
@@ -77,11 +75,8 @@ extension Alamofire.DataRequest {
                 } else if let response = rsp.response, let data = rsp.data {
                     
                     switch response.statusCode {
-                    case ErrorType.success.rawValue,
-                         ErrorType.nocontent.rawValue,
-                         ErrorType.successRequestInfo.rawValue:
+                    case ErrorType.success.rawValue:
                         let json = try? JSONSerialization.jsonObject(with: data, options: [])
-                        //print("JSON data response: ", json)
                         fulfill(data)
                     default:
                         let json = try? JSONSerialization.jsonObject(with: data, options: [])

@@ -27,10 +27,7 @@ extension ModelController: UIPageViewControllerDataSource {
     
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> UIViewController? {
         
-        // if (self.pageData.count == 0) || (index >= self.pageData.count) { //прорверка
-        //    return nil
-        //}
-        
+      
         indexCarentViewController = index  //[0, 1, 2]
         
         switch  indexCarentViewController {
@@ -49,7 +46,6 @@ extension ModelController: UIPageViewControllerDataSource {
         case 2:
             let playlistViewController = storyboard.instantiateViewController(withIdentifier: "PlaylistViewController") as! PlaylistViewController
             playlistViewController.delegate = self
-            
             return playlistViewController
             
         default:
@@ -59,11 +55,7 @@ extension ModelController: UIPageViewControllerDataSource {
     
     
     func indexOfViewController(_ viewController: UIViewController) -> Int {
-        // Return the index of the given data view controller.
-        // Верните индекс данного контроллера представления данных.
-        // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
-        //Для простоты эта реализация использует статический массив объектов модели, а контроллер вида хранит объект модели; поэтому вы можете использовать объект модели для идентификации индекса.
-        
+       
         if viewController is PlayerViewController {
             return 1
         }
@@ -98,14 +90,6 @@ extension ModelController: UIPageViewControllerDataSource {
         index += 1
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
     }
-    
-    //    func presentationCount(for pageViewController: UIPageViewController) -> Int {
-    //      return pageData.count
-    //    }
-    //
-    //    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-    //        return 0
-    //    }
     
 }
 
