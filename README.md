@@ -1,2 +1,2 @@
 # IPlayer
-![simulator screen shot - iphone 8 - 2018-06-29 at 16 36 21](https://user-images.githubusercontent.com/23152897/42096632-85922684-7bbe-11e8-9cac-2982a23317bf.png)
+![animation](https://user-images.githubusercontent.com/23152897/42387410-ddecd3f6-814a-11e8-8677-2c3c704f61fb.gif)
