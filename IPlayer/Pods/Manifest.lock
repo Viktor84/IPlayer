@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.2)
+  - JaneSliderControl (1.0.3)
   - PromiseKit/Alamofire (4.4.0):
     - Alamofire (~> 4.0)
     - PromiseKit/CorePromise
@@ -9,20 +10,23 @@ PODS:
   - SDWebImage/Core (4.3.3)
 
 DEPENDENCIES:
+  - JaneSliderControl
   - PromiseKit/Alamofire (~> 4.4.0)
   - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - JaneSliderControl
     - PromiseKit
     - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  JaneSliderControl: 0073344105b2c2b4695d09f74b88b9891f58197c
   PromiseKit: ecf5fe92275d57ee77c9ede858af47a162e9b97e
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
-PODFILE CHECKSUM: d53160c16c0059c86eea6d46fcef060f89bcb114
+PODFILE CHECKSUM: 9b4666073cd3ac608a691a24e58b63fb4938d12b
 
 COCOAPODS: 1.5.2
