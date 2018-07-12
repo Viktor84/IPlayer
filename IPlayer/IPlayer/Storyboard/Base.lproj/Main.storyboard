@@ -34,15 +34,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="4jJ-9U-cJK">
-                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="FgS-7t-eQL"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="Rit-MQ-r0b"/>
-                                    <constraint firstAttribute="height" constant="375" id="ivu-Pg-Noa"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="375" id="nS7-y7-VKh"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwd-gv-ivh">
                                 <rect key="frame" x="0.0" y="439" width="375" height="31"/>
                                 <constraints>
@@ -88,13 +79,13 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="rewind7"/>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zqx-dM-heM">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zqx-dM-heM" customClass="JaneSliderControl">
                                 <rect key="frame" x="38" y="503" width="299" height="31"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="1" green="0.021250050600000001" blue="0.095568299760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="JaneSliderControl:" destination="2wJ-qM-Jra" eventType="valueChanged" id="AbX-18-IWQ"/>
-                                </connections>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzJ-CS-KCL">
                                 <rect key="frame" x="293" y="557" width="0.0" height="0.0"/>
@@ -133,11 +124,40 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="if_multi_111_light_grey"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="4jJ-9U-cJK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="FgS-7t-eQL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="Rit-MQ-r0b"/>
+                                    <constraint firstAttribute="height" constant="375" id="ivu-Pg-Noa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="375" id="nS7-y7-VKh"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGG-V3-KXY" customClass="SliderControl" customModule="JaneSliderControl">
+                                <rect key="frame" x="16" y="394" width="348" height="28"/>
+                                <color key="backgroundColor" red="1" green="0.217221999" blue="0.087184195170000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="7Og-Cw-y3B"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="sliderColor">
+                                        <color key="value" red="0.21850945070674321" green="0.71814281088082899" blue="0.24561103456706135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sliderWidth">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Tqm-tN-Lpy" firstAttribute="trailing" secondItem="4jJ-9U-cJK" secondAttribute="trailing" id="0vu-bL-lQX"/>
+                            <constraint firstItem="CGG-V3-KXY" firstAttribute="top" secondItem="Cho-zW-bPl" secondAttribute="top" constant="372" id="1Pu-gs-O6b"/>
                             <constraint firstItem="Zqx-dM-heM" firstAttribute="leading" secondItem="Cho-zW-bPl" secondAttribute="leading" constant="40" id="2ZD-vL-L6L"/>
+                            <constraint firstItem="CGG-V3-KXY" firstAttribute="leading" secondItem="Cho-zW-bPl" secondAttribute="leading" constant="15" id="61h-51-RiW"/>
                             <constraint firstItem="Tqm-tN-Lpy" firstAttribute="top" secondItem="4jJ-9U-cJK" secondAttribute="bottom" constant="30" id="6bZ-ls-pMO"/>
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="top" secondItem="Cho-zW-bPl" secondAttribute="top" id="6jj-Ay-XJJ"/>
                             <constraint firstItem="Cho-zW-bPl" firstAttribute="bottom" secondItem="gNt-HO-NWd" secondAttribute="bottom" constant="20" id="8jM-lM-YS5"/>
@@ -160,6 +180,8 @@
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="trailing" secondItem="Cho-zW-bPl" secondAttribute="trailing" id="c4z-WQ-bAU"/>
                             <constraint firstItem="Tqm-tN-Lpy" firstAttribute="leading" secondItem="4jJ-9U-cJK" secondAttribute="leading" id="dDJ-GS-CPn"/>
                             <constraint firstItem="hwd-gv-ivh" firstAttribute="trailing" secondItem="Cho-zW-bPl" secondAttribute="trailing" id="dhc-RS-fjd"/>
+                            <constraint firstItem="Cho-zW-bPl" firstAttribute="trailing" secondItem="CGG-V3-KXY" secondAttribute="trailing" id="e65-Bm-7tZ"/>
+                            <constraint firstItem="Cho-zW-bPl" firstAttribute="trailing" secondItem="CGG-V3-KXY" secondAttribute="trailing" constant="15" id="gF6-9X-Iox"/>
                             <constraint firstItem="hwd-gv-ivh" firstAttribute="top" secondItem="4jJ-9U-cJK" secondAttribute="bottom" id="gUB-Hd-yKe"/>
                             <constraint firstItem="vlL-5V-489" firstAttribute="centerX" secondItem="XKt-yR-RfA" secondAttribute="centerX" id="ha5-Rb-ome"/>
                             <constraint firstItem="Cho-zW-bPl" firstAttribute="trailing" secondItem="Zqx-dM-heM" secondAttribute="trailing" constant="40" id="hc7-3g-uGV"/>
@@ -170,6 +192,7 @@
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="top" secondItem="Cho-zW-bPl" secondAttribute="top" id="u4Z-OR-kkK"/>
                             <constraint firstItem="4jJ-9U-cJK" firstAttribute="leading" secondItem="Cho-zW-bPl" secondAttribute="leading" id="u8q-Gg-eWq"/>
                             <constraint firstItem="vlL-5V-489" firstAttribute="leading" secondItem="Crb-MW-E2a" secondAttribute="trailing" constant="14" id="ukO-Px-1GD"/>
+                            <constraint firstItem="CGG-V3-KXY" firstAttribute="leading" secondItem="Cho-zW-bPl" secondAttribute="leading" id="xVI-6y-jsT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cho-zW-bPl"/>
                     </view>
@@ -178,6 +201,8 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="3x2-Sy-Vyb"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="CustomControl" destination="Zqx-dM-heM" id="LVc-fY-KT9"/>
+                        <outlet property="customControl" destination="CGG-V3-KXY" id="XpY-Ru-i3i"/>
                         <outlet property="imageView" destination="4jJ-9U-cJK" id="Aa7-nE-90C"/>
                         <outlet property="musicalGroupLabel" destination="Tqm-tN-Lpy" id="sPQ-kD-BLk"/>
                         <outlet property="playStopButton" destination="vlL-5V-489" id="s0z-Ji-C6S"/>
@@ -192,7 +217,7 @@
         <scene sceneID="mxf-Zq-Hmt">
             <objects>
                 <viewController storyboardIdentifier="EqualizerViewController" id="mdf-ym-Lf0" customClass="EqualizerViewController" customModule="IPlayer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a4W-BE-tRC">
+                    <view key="view" contentMode="scaleToFill" id="a4W-BE-tRC" customClass="J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

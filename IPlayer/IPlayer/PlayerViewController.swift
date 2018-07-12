@@ -11,7 +11,7 @@ import UIKit
 import AVFoundation
 import AVKit
 import SDWebImage
-//import JaneSliderControl
+import JaneSliderControl
 
 
 
@@ -19,19 +19,15 @@ class PlayerViewController: UIViewController {
     
     
     private let playerManager = PlayerManager.sharedInstance
-    
-    @IBAction func JaneSliderControl(_ sender: UISlider) {
-        
-        
-        
-    }
-    
     @IBOutlet weak var playStopButton: UIButton!
     @IBOutlet weak var sliderBoard: UISlider!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var songLabel: UILabel!
     @IBOutlet weak var musicalGroupLabel: UILabel!
     
+    @IBOutlet weak var customControl: SliderControl!
+    
+
     
     
     var slider = UISlider()
