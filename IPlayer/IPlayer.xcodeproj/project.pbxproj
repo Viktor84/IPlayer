@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		46E5C0F5DCF26AF84D0235EC /* Pods_IPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */; };
+		DC15E82820FADF3C00026853 /* PlayerBlockDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC15E82720FADF3C00026853 /* PlayerBlockDisplayable.swift */; };
 		DC3904FC20DB3A9C009CCD1B /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3904FB20DB3A9C009CCD1B /* placeholder.png */; };
+		DC81916920FAE85C004D4084 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81916820FAE85C004D4084 /* Color+Extension.swift */; };
+		DC94A48220FC0FDC00198EE8 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = DC94A48020FC0FDB00198EE8 /* left.png */; };
+		DC94A48320FC0FDC00198EE8 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = DC94A48120FC0FDB00198EE8 /* right.png */; };
+		DC94A48520FC110B00198EE8 /* adele.png in Resources */ = {isa = PBXBuildFile; fileRef = DC94A48420FC110B00198EE8 /* adele.png */; };
+		DC94A48720FC111100198EE8 /* radiohead.png in Resources */ = {isa = PBXBuildFile; fileRef = DC94A48620FC111100198EE8 /* radiohead.png */; };
 		DD0C3C8620ECE42700F8E47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0C3C8520ECE42700F8E47E /* Assets.xcassets */; };
 		DD3FB14620D7AB3300BD8998 /* IPlayerTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FB14520D7AB3300BD8998 /* IPlayerTabelViewCell.swift */; };
 		DD4095BC209C5EFC0069E626 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */; };
@@ -37,7 +43,13 @@
 		404A2074E2C407495C5EA466 /* Pods-IPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8294B9596425A4919DC05827 /* Pods-IPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		DC15E82720FADF3C00026853 /* PlayerBlockDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBlockDisplayable.swift; sourceTree = "<group>"; };
 		DC3904FB20DB3A9C009CCD1B /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		DC81916820FAE85C004D4084 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		DC94A48020FC0FDB00198EE8 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		DC94A48120FC0FDB00198EE8 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		DC94A48420FC110B00198EE8 /* adele.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adele.png; sourceTree = "<group>"; };
+		DC94A48620FC111100198EE8 /* radiohead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiohead.png; sourceTree = "<group>"; };
 		DD0C3C8520ECE42700F8E47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD3FB14520D7AB3300BD8998 /* IPlayerTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPlayerTabelViewCell.swift; sourceTree = "<group>"; };
 		DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
@@ -96,12 +108,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DC15E82620FADF0B00026853 /* POP */ = {
+			isa = PBXGroup;
+			children = (
+				DC15E82720FADF3C00026853 /* PlayerBlockDisplayable.swift */,
+			);
+			path = POP;
+			sourceTree = "<group>";
+		};
 		DC3904FA20DB3A4A009CCD1B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				DC3904FB20DB3A9C009CCD1B /* placeholder.png */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		DC81916720FAE83E004D4084 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC81916820FAE85C004D4084 /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DD500A5420D11DB800FFB72B /* Model */ = {
@@ -164,6 +192,10 @@
 			isa = PBXGroup;
 			children = (
 				DD0C3C8520ECE42700F8E47E /* Assets.xcassets */,
+				DC94A48020FC0FDB00198EE8 /* left.png */,
+				DC94A48120FC0FDB00198EE8 /* right.png */,
+				DC94A48420FC110B00198EE8 /* adele.png */,
+				DC94A48620FC111100198EE8 /* radiohead.png */,
 				DDB6257120DD056F004051FF /* apple_iphone.png */,
 			);
 			name = " image";
@@ -204,6 +236,8 @@
 		DDFC7F10209894CD006819D5 /* IPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				DC81916720FAE83E004D4084 /* Extensions */,
+				DC15E82620FADF0B00026853 /* POP */,
 				DC3904FA20DB3A4A009CCD1B /* Sources */,
 				DD53F54A20D96CD000FE5211 /* Storyboard */,
 				DD53F54920D96C9800FE5211 /* View */,
@@ -232,6 +266,7 @@
 				DDFC7F0B209894CC006819D5 /* Frameworks */,
 				DDFC7F0C209894CC006819D5 /* Resources */,
 				198690BC01EAAD0671868625 /* [CP] Embed Pods Frameworks */,
+				369252524406D667BCA60737 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,10 +323,14 @@
 				DDFC7F20209894CE006819D5 /* LaunchScreen.storyboard in Resources */,
 				DC3904FC20DB3A9C009CCD1B /* placeholder.png in Resources */,
 				DDFC7F1B209894CD006819D5 /* Main.storyboard in Resources */,
+				DC94A48320FC0FDC00198EE8 /* right.png in Resources */,
 				DD544B8120A5F37D00317F50 /* images.jpeg in Resources */,
+				DC94A48520FC110B00198EE8 /* adele.png in Resources */,
 				DD0C3C8620ECE42700F8E47E /* Assets.xcassets in Resources */,
 				DD544B8920A5FEAE00317F50 /* sting-fields_of_gold.mp3 in Resources */,
+				DC94A48220FC0FDC00198EE8 /* left.png in Resources */,
 				DDB6257220DD056F004051FF /* apple_iphone.png in Resources */,
+				DC94A48720FC111100198EE8 /* radiohead.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +361,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		369252524406D667BCA60737 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4965A9E7A826B838B4E4EC7C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,7 +402,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDD3235B20C04ECA00BE1971 /* DataRequest+Trakkers.swift in Sources */,
+				DC81916920FAE85C004D4084 /* Color+Extension.swift in Sources */,
 				DDFC7F14209894CD006819D5 /* RootViewController.swift in Sources */,
+				DC15E82820FADF3C00026853 /* PlayerBlockDisplayable.swift in Sources */,
 				DDD3235F20C04F5400BE1971 /* Manager+Trakkers.swift in Sources */,
 				DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */,
 				DD3FB14620D7AB3300BD8998 /* IPlayerTabelViewCell.swift in Sources */,

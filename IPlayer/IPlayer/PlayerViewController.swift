@@ -17,11 +17,32 @@ import JaneSliderControl
 
 class PlayerViewController: UIViewController {
     
+    class UICustomView: UIView, PlayerBlockDisplayable {}
     
     private let playerManager = PlayerManager.sharedInstance
+    @IBOutlet weak var bottomBlockView: UICustomView!
     @IBOutlet weak var playStopButton: UIButton!
     @IBOutlet weak var sliderBoard: UISlider!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+    
+            imageView.layer.shadowColor = UIColor.black.cgColor
+            imageView.layer.shadowOpacity = 1
+            imageView.layer.shadowOffset = CGSize.zero
+            imageView.layer.shadowRadius = 10
+            imageView.layer.shadowPath = UIBezierPath(rect: imageView.bounds).cgPath
+            imageView.layer.shouldRasterize = true
+//            imageView.clipsToBounds = true
+//            imageView.layer.shadowColor = UIColor.red.cgColor
+//            imageView.layer.shadowOpacity = 1.0
+//            imageView.layer.shadowOffset = CGSize.zero
+//            imageView.layer.shadowRadius = 4
+//            imageView.layer.shadowPath = UIBezierPath(rect: imageView.bounds).cgPath
+//            imageView.layer.shouldRasterize = false
+//            imageView.layer.borderWidth = 1
+//            imageView.layer.borderColor = UIColor.lightGray.cgColor
+        }
+    }
     @IBOutlet weak var songLabel: UILabel!
     @IBOutlet weak var musicalGroupLabel: UILabel!
     
@@ -36,8 +57,17 @@ class PlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bottomBlockView.displayAsGradientView()
         updatePlayerInfo()
         updatePlayerUI()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if let gradient = bottomBlockView.layer.sublayers?[0] as? CAGradientLayer {
+            gradient.frame = bottomBlockView.bounds
+        }
     }
     
     private func updatePlayerInfo() {
