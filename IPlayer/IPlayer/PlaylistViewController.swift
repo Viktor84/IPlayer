@@ -10,8 +10,6 @@ import Foundation
 import UIKit
 import PromiseKit
 
-
-
 protocol PlaylistViewControllerDelegate: class {
     func moveToPlayerControler()
 }
@@ -19,6 +17,8 @@ protocol PlaylistViewControllerDelegate: class {
 class PlaylistViewController: UIViewController{
     @IBOutlet weak var tabelView: UITableView!
     
+    var flag = true
+    var currentIndex: Int = 6
     private let playerManager = PlayerManager.sharedInstance
     fileprivate let apiService = APIService.sharedInstance
     weak var delegate: PlaylistViewControllerDelegate?
@@ -125,3 +125,4 @@ extension PlaylistViewController: IPlayerTabelViewCellDelegate {
         delegate?.moveToPlayerControler()
     }
 }
+

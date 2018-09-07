@@ -13,8 +13,6 @@ import AVKit
 import SDWebImage
 import JaneSliderControl
 
-
-
 class PlayerViewController: UIViewController {
     
     class UICustomView: UIView, PlayerBlockDisplayable {}
