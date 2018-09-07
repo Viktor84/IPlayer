@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		46E5C0F5DCF26AF84D0235EC /* Pods_IPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */; };
+		B34349A92143430F00CB0BA2 /* ParseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34349A82143430F00CB0BA2 /* ParseUtil.swift */; };
 		B367068B21433B6A003B7B0D /* adele.png in Resources */ = {isa = PBXBuildFile; fileRef = B367068621433B6A003B7B0D /* adele.png */; };
 		B367068C21433B6A003B7B0D /* radiohead.png in Resources */ = {isa = PBXBuildFile; fileRef = B367068721433B6A003B7B0D /* radiohead.png */; };
 		B367068D21433B6A003B7B0D /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = B367068821433B6A003B7B0D /* left.png */; };
 		B367068E21433B6A003B7B0D /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = B367068921433B6A003B7B0D /* right.png */; };
 		B378CC4C21433C5F000F48AA /* apple_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B378CC4B21433C5E000F48AA /* apple_iphone.png */; };
 		B378CC5321433FC3000F48AA /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378CC4D21433FC3000F48AA /* ModelController.swift */; };
-		B378CC5421433FC3000F48AA /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378CC4E21433FC3000F48AA /* DataViewController.swift */; };
 		B378CC5521433FC3000F48AA /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378CC4F21433FC3000F48AA /* PlaylistViewController.swift */; };
 		B378CC5621433FC3000F48AA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378CC5021433FC3000F48AA /* RootViewController.swift */; };
 		B378CC5721433FC3000F48AA /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378CC5121433FC3000F48AA /* PlayerViewController.swift */; };
@@ -42,13 +42,13 @@
 		404A2074E2C407495C5EA466 /* Pods-IPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8294B9596425A4919DC05827 /* Pods-IPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		B34349A82143430F00CB0BA2 /* ParseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseUtil.swift; sourceTree = "<group>"; };
 		B367068621433B6A003B7B0D /* adele.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adele.png; sourceTree = "<group>"; };
 		B367068721433B6A003B7B0D /* radiohead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiohead.png; sourceTree = "<group>"; };
 		B367068821433B6A003B7B0D /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
 		B367068921433B6A003B7B0D /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		B378CC4B21433C5E000F48AA /* apple_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple_iphone.png; sourceTree = "<group>"; };
 		B378CC4D21433FC3000F48AA /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelController.swift; path = Controller/ModelController.swift; sourceTree = "<group>"; };
-		B378CC4E21433FC3000F48AA /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataViewController.swift; path = Controller/DataViewController.swift; sourceTree = "<group>"; };
 		B378CC4F21433FC3000F48AA /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaylistViewController.swift; path = Controller/PlaylistViewController.swift; sourceTree = "<group>"; };
 		B378CC5021433FC3000F48AA /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = Controller/RootViewController.swift; sourceTree = "<group>"; };
 		B378CC5121433FC3000F48AA /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerViewController.swift; path = Controller/PlayerViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				DD53F54720D93F9900FE5211 /* PlayerManager.swift */,
+				B34349A82143430F00CB0BA2 /* ParseUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -174,7 +175,6 @@
 		DD544B8A20A5FEE800317F50 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B378CC4E21433FC3000F48AA /* DataViewController.swift */,
 				B378CC5221433FC3000F48AA /* EqualizerViewController.swift */,
 				B378CC4D21433FC3000F48AA /* ModelController.swift */,
 				B378CC5121433FC3000F48AA /* PlayerViewController.swift */,
@@ -400,12 +400,12 @@
 				B378CC5321433FC3000F48AA /* ModelController.swift in Sources */,
 				DDD3235520C04D3900BE1971 /* ApiResult.swift in Sources */,
 				B378CC5821433FC3000F48AA /* EqualizerViewController.swift in Sources */,
-				B378CC5421433FC3000F48AA /* DataViewController.swift in Sources */,
 				B378CC5521433FC3000F48AA /* PlaylistViewController.swift in Sources */,
 				DD500A5A20D12DF100FFB72B /* Utils.swift in Sources */,
 				DD500A5620D11DE200FFB72B /* Song.swift in Sources */,
 				DDD3235920C04DE500BE1971 /* APIService.swift in Sources */,
 				DD500A5820D129C500FFB72B /* NSError+IPlayer.swift in Sources */,
+				B34349A92143430F00CB0BA2 /* ParseUtil.swift in Sources */,
 				DD53F54820D93F9900FE5211 /* PlayerManager.swift in Sources */,
 				DDD3235D20C04F1B00BE1971 /* Endpoint.swift in Sources */,
 				DDFC7F12209894CD006819D5 /* AppDelegate.swift in Sources */,
