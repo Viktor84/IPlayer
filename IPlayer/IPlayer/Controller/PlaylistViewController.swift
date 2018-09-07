@@ -42,31 +42,12 @@ class PlaylistViewController: UIViewController{
     
     func getTrackList(index: Int) {
         apiService.getTrackList(index: index)
-            
             .then { [weak self] json in
-                var _arrSong = [Song]()
-                if let data = json as? [String: Any],
-                    let arr = data["data"] as? [[String: Any]] {
-                    for dic in arr  {
-                        if let artist = dic["artist"] as? [String: Any],
-                            let album = dic["album"] as? [String: Any] {
-                            var structSong = Song()
-                            structSong.pictureBig = album["cover_big"] as? String
-                            structSong.titleShort = dic["title_short"] as? String
-                            structSong.musicalGroup = artist["name"] as? String
-                            structSong.titleSong = dic["title"] as? String
-                            structSong.idSong = dic["id"] as? Int
-                            structSong.previewSong = dic["preview"] as? String
-                            _arrSong.append(structSong)
-                        }
-                    }
-                    self?.arrSong = _arrSong
-                }
+                let _arrSong = ParseUtil.parseTrackList(json: json)
+                self?.arrSong = _arrSong
+                
                 return AnyPromise(Promise())
             }
-            .catch { [weak self] error in
-                print("error: \(error)")
-        }
     }
     
     override func viewDidLoad() {
