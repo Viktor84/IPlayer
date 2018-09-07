@@ -1,0 +1,6 @@
+framework module JaneSliderControl {
+  umbrella header "JaneSliderControl-umbrella.h"
+
+  export *
+  module * { export * }
+}
