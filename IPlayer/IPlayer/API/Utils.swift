@@ -16,6 +16,7 @@ final class Utils {
     
     class func buildFullPath(currentLocationTree: [String]) -> String {
         var fullTree = ""
+        
         guard currentLocationTree.count > 0 else {
             return "We’re not covering this location at the moment"
         }

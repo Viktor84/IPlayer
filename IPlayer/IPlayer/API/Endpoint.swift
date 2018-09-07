@@ -26,12 +26,10 @@ enum Endpoint {
         }
     }
     
-    
     //TODO: NSURL.getBaseUrl() depends on dev/prod
     var url: String {
         
         let baseUrl = "https://api.deezer.com"
-        
         switch self {
         case .getTrackList(let index):
             return baseUrl + "/artist/\(index)/top?limit=50"
@@ -39,7 +37,4 @@ enum Endpoint {
             return baseUrl + "/leads"
         }
     }
-    
-    
-    
 }

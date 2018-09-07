@@ -21,16 +21,13 @@ class PlayerManager {
     }
     private var player: AVPlayer?
     
-    
-    private init() {
-        
-    }
+    private init() {}
     
     func playWithSong(song: Song) {
         _currentSong = song
         start()
     }
-  
+    
     func initWithSong(song: Song) {
         _currentSong = song
     }
@@ -39,9 +36,8 @@ class PlayerManager {
         guard let _song = _currentSong else {
             return
         }
- 
-        let url = URL(string: _song.previewSong!)
         
+        let url = URL(string: _song.previewSong!)
         player = AVPlayer(url: url!)
         player?.play()
     }
@@ -64,6 +60,7 @@ class PlayerManager {
     
     func stop() {
         _currentSong = nil
+        
         player?.pause()
         player = nil
     }

@@ -14,7 +14,6 @@ protocol PlayerBlockDisplayable: class{}
 extension PlayerBlockDisplayable where Self: UIView {
 
     func displayAsGradientView() {
-        
         let gradient = CAGradientLayer()
         
         gradient.frame = self.bounds

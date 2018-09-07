@@ -12,11 +12,11 @@ import SDWebImage
 protocol IPlayerTabelViewCellDelegate: class {
     func playSong(song: Song)
 }
+
 class IPlayerTabelViewCell: UITableViewCell {
     
     @IBOutlet weak var musicalGroupLabel: UILabel!
     @IBOutlet weak var songLabel: UILabel!
-    
     @IBOutlet weak var pictureBig: UIImageView!
     
     weak var delegate: IPlayerTabelViewCellDelegate?
@@ -30,9 +30,9 @@ class IPlayerTabelViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    
     func configure(song: Song) {
         currentSong = song
+        
         musicalGroupLabel.text = song.musicalGroup
         songLabel.text = song.titleSong
         
@@ -43,20 +43,16 @@ class IPlayerTabelViewCell: UITableViewCell {
         }
     }
     
-    
     func cancelCellImageLoad() {
         pictureBig.sd_cancelCurrentImageLoad()
+        
         pictureBig.image = nil
     }
-    
     
     @IBAction func onPlayClick(_ sender: UIButton) {
         guard let _song = currentSong else {
             return
         }
         delegate?.playSong(song: _song)
-        
-        
     }
-    
 }

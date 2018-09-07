@@ -316,7 +316,7 @@
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Nt-iQ-4TQ">
                                 <rect key="frame" x="75" y="60" width="238" height="31"/>
-                                <color key="tintColor" red="1" green="0.021250050600000001" blue="0.095568299760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.27450980392156865" green="0.098039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 Hz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqW-9o-SvJ">
                                 <rect key="frame" x="15" y="65" width="47" height="17"/>
@@ -336,10 +336,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="daU-1H-O5b">
-                                <rect key="frame" x="75" y="110" width="238" height="31"/>
-                                <color key="tintColor" red="1" green="0.021250050600000001" blue="0.095568299760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3db" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZd-oN-qp4">
                                 <rect key="frame" x="326" y="117" width="34" height="17"/>
                                 <constraints>
@@ -351,7 +347,7 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k1h-eK-tjd">
                                 <rect key="frame" x="75" y="160" width="238" height="31"/>
-                                <color key="tintColor" red="1" green="0.021250050600000001" blue="0.095568299760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.27450980392156865" green="0.098039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-1db" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOW-zD-zMd">
                                 <rect key="frame" x="326" y="167" width="34" height="17"/>
@@ -373,7 +369,7 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bjg-vn-OGc">
                                 <rect key="frame" x="75" y="210" width="238" height="31"/>
-                                <color key="tintColor" red="1" green="0.021250050600000001" blue="0.095568299760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.27450980392156865" green="0.098039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-3db" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyQ-Es-WJ4">
                                 <rect key="frame" x="326" y="217" width="34" height="17"/>
@@ -395,11 +391,11 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tEc-OV-sgM">
                                 <rect key="frame" x="75" y="260" width="238" height="31"/>
-                                <color key="tintColor" red="1" green="0.021250050600000001" blue="0.095568299760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.27450980392156865" green="0.098039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="C5X-SA-SIz">
                                 <rect key="frame" x="75" y="310" width="238" height="31"/>
-                                <color key="tintColor" red="1" green="0.021250050600000001" blue="0.095568299760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.27450980392156865" green="0.098039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9kHz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctO-v4-uHv">
                                 <rect key="frame" x="15" y="317" width="47" height="17"/>
@@ -439,7 +435,7 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="51Z-CW-C13">
                                 <rect key="frame" x="75" y="360" width="238" height="31"/>
-                                <color key="tintColor" red="1" green="0.021250050600000001" blue="0.095568299760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.27450980392156865" green="0.098039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="16kHz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6P-24-EFg">
                                 <rect key="frame" x="15" y="367" width="47" height="17"/>
@@ -470,7 +466,7 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Ie-rj-gFY">
                                 <rect key="frame" x="75" y="473" width="238" height="31"/>
-                                <color key="tintColor" red="1" green="0.021250050600000001" blue="0.095568299760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.2196078431372549" green="0.094117647058823528" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PREAMP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAZ-X3-puw">
                                 <rect key="frame" x="115" y="423" width="145" height="20"/>
@@ -496,6 +492,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="daU-1H-O5b">
+                                <rect key="frame" x="75" y="110" width="238" height="31"/>
+                                <color key="tintColor" red="0.27450980392156865" green="0.098039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -636,7 +636,8 @@
                                                         <constraint firstAttribute="width" constant="46" id="AU7-cP-DD8"/>
                                                         <constraint firstAttribute="height" constant="46" id="xeX-om-qad"/>
                                                     </constraints>
-                                                    <state key="normal" image="rewind8"/>
+                                                    <color key="tintColor" red="0.27450980390000002" green="0.098039215690000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" image="play_purple"/>
                                                     <connections>
                                                         <action selector="onPlayClick:" destination="3EM-TJ-w5H" eventType="touchUpInside" id="XsZ-ep-KXb"/>
                                                     </connections>
@@ -714,10 +715,10 @@
         <image name="left.png" width="64" height="296"/>
         <image name="pause" width="25" height="42"/>
         <image name="placeholder.png" width="236" height="419"/>
+        <image name="play_purple" width="35" height="43"/>
         <image name="radiohead.png" width="654" height="650"/>
         <image name="rewind4" width="46" height="41"/>
         <image name="rewind7" width="47" height="41"/>
-        <image name="rewind8" width="35" height="43"/>
         <image name="right.png" width="66" height="298"/>
     </resources>
 </document>

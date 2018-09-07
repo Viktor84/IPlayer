@@ -16,7 +16,6 @@ class APIService {
     
     private var manager: SessionManager
     
-    
     private init() {
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 30
@@ -25,10 +24,10 @@ class APIService {
         manager = SessionManager(configuration: configuration)
     }
     
-    
     @discardableResult
     func getTrackList(index: Int) -> Promise<[String: Any]?> {
         return manager.apiRequest(endpoint: .getTrackList(index: index), parameters: nil).apiResponse()
+            
             .then { [weak self] json in
                 if let data = json as? [String: Any] {
                     return Promise(value: data)
@@ -42,6 +41,7 @@ class APIService {
     
     func requestInfo(name: String, organization: String, email: String, phone: String) -> Promise<[String: Any]?> {
         return manager.apiRequest(endpoint: .requestinfo, parameters: nil, accessToken: nil).apiResponse()
+            
             .then { [weak self] json in
                 if let data = json as? [String: Any] {
                     return Promise(value: data)

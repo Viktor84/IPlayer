@@ -13,42 +13,32 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
     
     var pageViewController: UIPageViewController?
     
-    func initNotification() {
-        
-    }
+    func initNotification() {}
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+    
         self.pageViewController = UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
         self.pageViewController!.delegate = self
-        
-        let startingViewController = self.modelController.viewControllerAtIndex(1, storyboard: self.storyboard!)! // 1
+        let startingViewController = self.modelController.viewControllerAtIndex(1, storyboard: self.storyboard!)!
         let viewControllers = [startingViewController]
         self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })
-        
         self.pageViewController!.dataSource = self.modelController
-        
         self.addChildViewController(self.pageViewController!)
         self.view.addSubview(self.pageViewController!.view)
-        
         var pageViewRect = self.view.bounds
         if UIDevice.current.userInterfaceIdiom == .pad {
             pageViewRect = pageViewRect.insetBy(dx: 40.0, dy: 40.0)
         }
         self.pageViewController!.view.frame = pageViewRect
-        
         self.pageViewController!.didMove(toParentViewController: self)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
     
     var modelController: ModelController {
-        
         if _modelController == nil {
             _modelController = ModelController()
         }
@@ -66,14 +56,12 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
             let currentViewController = self.pageViewController!.viewControllers![0]
             let viewControllers = [currentViewController]
             self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: true, completion: {done in })
-            
             self.pageViewController!.isDoubleSided = false
             return .min
         }
         
         let currentViewController = self.pageViewController!.viewControllers![0] 
         var viewControllers: [UIViewController]
-        
         let indexOfCurrentViewController = self.modelController.indexOfViewController(currentViewController)
         if (indexOfCurrentViewController == 0) || (indexOfCurrentViewController % 2 == 0) {
             let nextViewController = self.modelController.pageViewController(self.pageViewController!, viewControllerAfter: currentViewController)
@@ -83,13 +71,12 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
             viewControllers = [previousViewController!, currentViewController]
         }
         self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: true, completion: {done in })
-        
         return .mid
     }
     
-    
     private func slideToPage(index: Int, completion: (() -> Void)?) {
-        let count = 3 //Function to get number of viewControllers
+        let count = 3
+        
         let currentPageIndex = self.modelController.indexCarentViewController
         if index < count {
             if index > currentPageIndex {
@@ -111,10 +98,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
 extension RootViewController: ModelControllerDelegate {
     func moveToControler() {
-        print("RootViewController ====> turn page")
-        
         slideToPage(index: 1, completion: {
-            print("RootViewController ====> ura")
         })
     }
 }

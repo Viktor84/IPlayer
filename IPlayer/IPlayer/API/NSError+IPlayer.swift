@@ -16,9 +16,9 @@ public enum ErrorType: Int {
 
     func localizedUserInfo(description: Any?) -> [String: String] {
         var localizedDescription: String = ""
+        
         let localizedFailureReasonError: String = ""
         let localizedRecoverySuggestionError: String = ""
-        
         let comment = "Error.\(String(describing: self).capitalized)"
         
         if let data = description as? [String: Any], let detail = data["detail"] as? String {
