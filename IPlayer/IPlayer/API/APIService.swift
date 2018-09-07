@@ -44,7 +44,6 @@ class APIService {
             
             .then { [weak self] json in
                 if let data = json as? [String: Any] {
-                      print ("ABC")
                     return Promise(value: data)
                 }
                 return Promise(value: nil)
