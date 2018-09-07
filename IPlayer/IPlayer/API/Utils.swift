@@ -11,22 +11,6 @@ import Foundation
 final class Utils {
     
     class func cutomError(code: Int, message: String) -> NSError {
-        return NSError(domain: "com.trakkers", code: code, userInfo: [NSLocalizedDescriptionKey : message])
-    }
-    
-    class func buildFullPath(currentLocationTree: [String]) -> String {
-        var fullTree = ""
-        
-        guard currentLocationTree.count > 0 else {
-            return "We’re not covering this location at the moment"
-        }
-        let count = currentLocationTree.count - 1
-        for i in 0...count {
-            fullTree += currentLocationTree[i]
-            if i < count {
-                fullTree += " > "
-            }
-        }
-        return fullTree == "" ? "We’re not covering this location at the moment" : fullTree
+        return NSError(domain: "IPlayer", code: code, userInfo: [NSLocalizedDescriptionKey : message])
     }
 }

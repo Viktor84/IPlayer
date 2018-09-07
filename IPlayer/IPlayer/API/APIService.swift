@@ -11,7 +11,7 @@ import Alamofire
 import PromiseKit
 
 class APIService {
-    
+  
     static let sharedInstance = APIService()
     
     private var manager: SessionManager
@@ -53,7 +53,4 @@ class APIService {
         }
     }
 }
-
-
-
 

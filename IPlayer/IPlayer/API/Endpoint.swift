@@ -10,8 +10,7 @@ import Foundation
 import Alamofire
 
 
-var flag = true
-var currentIndex: Int = 6
+
 
 enum Endpoint {
     case getTrackList(index: Int)
