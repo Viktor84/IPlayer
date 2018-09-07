@@ -11,7 +11,7 @@ import Alamofire
 import PromiseKit
 
 class APIService {
-    
+  
     static let sharedInstance = APIService()
     
     private var manager: SessionManager
@@ -44,6 +44,7 @@ class APIService {
             
             .then { [weak self] json in
                 if let data = json as? [String: Any] {
+                      print ("ABC")
                     return Promise(value: data)
                 }
                 return Promise(value: nil)
@@ -53,7 +54,4 @@ class APIService {
         }
     }
 }
-
-
-
 
