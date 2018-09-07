@@ -8,33 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		46E5C0F5DCF26AF84D0235EC /* Pods_IPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */; };
+		B367068B21433B6A003B7B0D /* adele.png in Resources */ = {isa = PBXBuildFile; fileRef = B367068621433B6A003B7B0D /* adele.png */; };
+		B367068C21433B6A003B7B0D /* radiohead.png in Resources */ = {isa = PBXBuildFile; fileRef = B367068721433B6A003B7B0D /* radiohead.png */; };
+		B367068D21433B6A003B7B0D /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = B367068821433B6A003B7B0D /* left.png */; };
+		B367068E21433B6A003B7B0D /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = B367068921433B6A003B7B0D /* right.png */; };
+		B378CC4C21433C5F000F48AA /* apple_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B378CC4B21433C5E000F48AA /* apple_iphone.png */; };
+		B378CC5321433FC3000F48AA /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378CC4D21433FC3000F48AA /* ModelController.swift */; };
+		B378CC5421433FC3000F48AA /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378CC4E21433FC3000F48AA /* DataViewController.swift */; };
+		B378CC5521433FC3000F48AA /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378CC4F21433FC3000F48AA /* PlaylistViewController.swift */; };
+		B378CC5621433FC3000F48AA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378CC5021433FC3000F48AA /* RootViewController.swift */; };
+		B378CC5721433FC3000F48AA /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378CC5121433FC3000F48AA /* PlayerViewController.swift */; };
+		B378CC5821433FC3000F48AA /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378CC5221433FC3000F48AA /* EqualizerViewController.swift */; };
 		DC15E82820FADF3C00026853 /* PlayerBlockDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC15E82720FADF3C00026853 /* PlayerBlockDisplayable.swift */; };
 		DC3904FC20DB3A9C009CCD1B /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3904FB20DB3A9C009CCD1B /* placeholder.png */; };
 		DC81916920FAE85C004D4084 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81916820FAE85C004D4084 /* Color+Extension.swift */; };
-		DC94A48220FC0FDC00198EE8 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = DC94A48020FC0FDB00198EE8 /* left.png */; };
-		DC94A48320FC0FDC00198EE8 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = DC94A48120FC0FDB00198EE8 /* right.png */; };
-		DC94A48520FC110B00198EE8 /* adele.png in Resources */ = {isa = PBXBuildFile; fileRef = DC94A48420FC110B00198EE8 /* adele.png */; };
-		DC94A48720FC111100198EE8 /* radiohead.png in Resources */ = {isa = PBXBuildFile; fileRef = DC94A48620FC111100198EE8 /* radiohead.png */; };
 		DD0C3C8620ECE42700F8E47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0C3C8520ECE42700F8E47E /* Assets.xcassets */; };
 		DD3FB14620D7AB3300BD8998 /* IPlayerTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FB14520D7AB3300BD8998 /* IPlayerTabelViewCell.swift */; };
-		DD4095BC209C5EFC0069E626 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */; };
-		DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BD209C647B0069E626 /* EqualizerViewController.swift */; };
-		DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */; };
 		DD500A5620D11DE200FFB72B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD500A5520D11DE200FFB72B /* Song.swift */; };
 		DD500A5820D129C500FFB72B /* NSError+IPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD500A5720D129C500FFB72B /* NSError+IPlayer.swift */; };
 		DD500A5A20D12DF100FFB72B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD500A5920D12DF100FFB72B /* Utils.swift */; };
 		DD53F54820D93F9900FE5211 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53F54720D93F9900FE5211 /* PlayerManager.swift */; };
-		DD544B8120A5F37D00317F50 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DD544B8020A5F37D00317F50 /* images.jpeg */; };
-		DD544B8920A5FEAE00317F50 /* sting-fields_of_gold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */; };
-		DDB6257220DD056F004051FF /* apple_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB6257120DD056F004051FF /* apple_iphone.png */; };
 		DDD3235520C04D3900BE1971 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235420C04D3900BE1971 /* ApiResult.swift */; };
 		DDD3235920C04DE500BE1971 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235820C04DE500BE1971 /* APIService.swift */; };
 		DDD3235B20C04ECA00BE1971 /* DataRequest+Trakkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235A20C04ECA00BE1971 /* DataRequest+Trakkers.swift */; };
 		DDD3235D20C04F1B00BE1971 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235C20C04F1B00BE1971 /* Endpoint.swift */; };
 		DDD3235F20C04F5400BE1971 /* Manager+Trakkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3235E20C04F5400BE1971 /* Manager+Trakkers.swift */; };
 		DDFC7F12209894CD006819D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F11209894CD006819D5 /* AppDelegate.swift */; };
-		DDFC7F14209894CD006819D5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F13209894CD006819D5 /* RootViewController.swift */; };
-		DDFC7F18209894CD006819D5 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7F17209894CD006819D5 /* ModelController.swift */; };
 		DDFC7F1B209894CD006819D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFC7F19209894CD006819D5 /* Main.storyboard */; };
 		DDFC7F20209894CE006819D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFC7F1E209894CE006819D5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -43,28 +42,26 @@
 		404A2074E2C407495C5EA466 /* Pods-IPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		5781B5FAB016B639731EE488 /* Pods_IPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8294B9596425A4919DC05827 /* Pods-IPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IPlayer/Pods-IPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		B367068621433B6A003B7B0D /* adele.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adele.png; sourceTree = "<group>"; };
+		B367068721433B6A003B7B0D /* radiohead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiohead.png; sourceTree = "<group>"; };
+		B367068821433B6A003B7B0D /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		B367068921433B6A003B7B0D /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		B378CC4B21433C5E000F48AA /* apple_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple_iphone.png; sourceTree = "<group>"; };
+		B378CC4D21433FC3000F48AA /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelController.swift; path = Controller/ModelController.swift; sourceTree = "<group>"; };
+		B378CC4E21433FC3000F48AA /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataViewController.swift; path = Controller/DataViewController.swift; sourceTree = "<group>"; };
+		B378CC4F21433FC3000F48AA /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaylistViewController.swift; path = Controller/PlaylistViewController.swift; sourceTree = "<group>"; };
+		B378CC5021433FC3000F48AA /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = Controller/RootViewController.swift; sourceTree = "<group>"; };
+		B378CC5121433FC3000F48AA /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerViewController.swift; path = Controller/PlayerViewController.swift; sourceTree = "<group>"; };
+		B378CC5221433FC3000F48AA /* EqualizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EqualizerViewController.swift; path = Controller/EqualizerViewController.swift; sourceTree = "<group>"; };
 		DC15E82720FADF3C00026853 /* PlayerBlockDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBlockDisplayable.swift; sourceTree = "<group>"; };
 		DC3904FB20DB3A9C009CCD1B /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		DC81916820FAE85C004D4084 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		DC94A48020FC0FDB00198EE8 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
-		DC94A48120FC0FDB00198EE8 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
-		DC94A48420FC110B00198EE8 /* adele.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adele.png; sourceTree = "<group>"; };
-		DC94A48620FC111100198EE8 /* radiohead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiohead.png; sourceTree = "<group>"; };
 		DD0C3C8520ECE42700F8E47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD3FB14520D7AB3300BD8998 /* IPlayerTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPlayerTabelViewCell.swift; sourceTree = "<group>"; };
-		DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
-		DD4095BD209C647B0069E626 /* EqualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
-		DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		DD500A5520D11DE200FFB72B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		DD500A5720D129C500FFB72B /* NSError+IPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+IPlayer.swift"; sourceTree = "<group>"; };
 		DD500A5920D12DF100FFB72B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DD53F54720D93F9900FE5211 /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
-		DD544B8020A5F37D00317F50 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
-		DD544B8220A5FDD500317F50 /* apollo_440_-_stop_the_rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "apollo_440_-_stop_the_rock.mp3"; sourceTree = "<group>"; };
-		DD544B8320A5FDE800317F50 /* daft-punk-robot-rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "daft-punk-robot-rock.mp3"; sourceTree = "<group>"; };
-		DD544B8420A5FDEC00317F50 /* apollo-440-bout-dub.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "apollo-440-bout-dub.mp3"; sourceTree = "<group>"; };
-		DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sting-fields_of_gold.mp3"; sourceTree = "<group>"; };
-		DDB6257120DD056F004051FF /* apple_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple_iphone.png; sourceTree = "<group>"; };
 		DDD3235420C04D3900BE1971 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
 		DDD3235820C04DE500BE1971 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		DDD3235A20C04ECA00BE1971 /* DataRequest+Trakkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Trakkers.swift"; sourceTree = "<group>"; };
@@ -72,8 +69,6 @@
 		DDD3235E20C04F5400BE1971 /* Manager+Trakkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Manager+Trakkers.swift"; sourceTree = "<group>"; };
 		DDFC7F0E209894CD006819D5 /* IPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFC7F11209894CD006819D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDFC7F13209894CD006819D5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		DDFC7F17209894CD006819D5 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		DDFC7F1A209894CD006819D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDFC7F1F209894CE006819D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDFC7F21209894CE006819D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +114,11 @@
 		DC3904FA20DB3A4A009CCD1B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B367068621433B6A003B7B0D /* adele.png */,
+				B378CC4B21433C5E000F48AA /* apple_iphone.png */,
+				B367068821433B6A003B7B0D /* left.png */,
+				B367068721433B6A003B7B0D /* radiohead.png */,
+				B367068921433B6A003B7B0D /* right.png */,
 				DC3904FB20DB3A9C009CCD1B /* placeholder.png */,
 			);
 			path = Sources;
@@ -167,11 +167,6 @@
 		DD544B7D20A59C8000317F50 /* Song */ = {
 			isa = PBXGroup;
 			children = (
-				DD544B8420A5FDEC00317F50 /* apollo-440-bout-dub.mp3 */,
-				DD544B8820A5FEAE00317F50 /* sting-fields_of_gold.mp3 */,
-				DD544B8320A5FDE800317F50 /* daft-punk-robot-rock.mp3 */,
-				DD544B8220A5FDD500317F50 /* apollo_440_-_stop_the_rock.mp3 */,
-				DD544B8020A5F37D00317F50 /* images.jpeg */,
 			);
 			name = Song;
 			sourceTree = "<group>";
@@ -179,11 +174,12 @@
 		DD544B8A20A5FEE800317F50 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DDFC7F13209894CD006819D5 /* RootViewController.swift */,
-				DDFC7F17209894CD006819D5 /* ModelController.swift */,
-				DD4095BB209C5EFC0069E626 /* PlayerViewController.swift */,
-				DD4095BF209C64AE0069E626 /* PlaylistViewController.swift */,
-				DD4095BD209C647B0069E626 /* EqualizerViewController.swift */,
+				B378CC4E21433FC3000F48AA /* DataViewController.swift */,
+				B378CC5221433FC3000F48AA /* EqualizerViewController.swift */,
+				B378CC4D21433FC3000F48AA /* ModelController.swift */,
+				B378CC5121433FC3000F48AA /* PlayerViewController.swift */,
+				B378CC4F21433FC3000F48AA /* PlaylistViewController.swift */,
+				B378CC5021433FC3000F48AA /* RootViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -192,11 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				DD0C3C8520ECE42700F8E47E /* Assets.xcassets */,
-				DC94A48020FC0FDB00198EE8 /* left.png */,
-				DC94A48120FC0FDB00198EE8 /* right.png */,
-				DC94A48420FC110B00198EE8 /* adele.png */,
-				DC94A48620FC111100198EE8 /* radiohead.png */,
-				DDB6257120DD056F004051FF /* apple_iphone.png */,
 			);
 			name = " image";
 			sourceTree = "<group>";
@@ -320,17 +311,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B367068B21433B6A003B7B0D /* adele.png in Resources */,
 				DDFC7F20209894CE006819D5 /* LaunchScreen.storyboard in Resources */,
 				DC3904FC20DB3A9C009CCD1B /* placeholder.png in Resources */,
 				DDFC7F1B209894CD006819D5 /* Main.storyboard in Resources */,
-				DC94A48320FC0FDC00198EE8 /* right.png in Resources */,
-				DD544B8120A5F37D00317F50 /* images.jpeg in Resources */,
-				DC94A48520FC110B00198EE8 /* adele.png in Resources */,
 				DD0C3C8620ECE42700F8E47E /* Assets.xcassets in Resources */,
-				DD544B8920A5FEAE00317F50 /* sting-fields_of_gold.mp3 in Resources */,
-				DC94A48220FC0FDC00198EE8 /* left.png in Resources */,
-				DDB6257220DD056F004051FF /* apple_iphone.png in Resources */,
-				DC94A48720FC111100198EE8 /* radiohead.png in Resources */,
+				B367068C21433B6A003B7B0D /* radiohead.png in Resources */,
+				B367068E21433B6A003B7B0D /* right.png in Resources */,
+				B367068D21433B6A003B7B0D /* left.png in Resources */,
+				B378CC4C21433C5F000F48AA /* apple_iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,18 +391,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDD3235B20C04ECA00BE1971 /* DataRequest+Trakkers.swift in Sources */,
+				B378CC5621433FC3000F48AA /* RootViewController.swift in Sources */,
 				DC81916920FAE85C004D4084 /* Color+Extension.swift in Sources */,
-				DDFC7F14209894CD006819D5 /* RootViewController.swift in Sources */,
 				DC15E82820FADF3C00026853 /* PlayerBlockDisplayable.swift in Sources */,
 				DDD3235F20C04F5400BE1971 /* Manager+Trakkers.swift in Sources */,
-				DD4095BE209C647B0069E626 /* EqualizerViewController.swift in Sources */,
+				B378CC5721433FC3000F48AA /* PlayerViewController.swift in Sources */,
 				DD3FB14620D7AB3300BD8998 /* IPlayerTabelViewCell.swift in Sources */,
-				DD4095C0209C64AE0069E626 /* PlaylistViewController.swift in Sources */,
-				DDFC7F18209894CD006819D5 /* ModelController.swift in Sources */,
+				B378CC5321433FC3000F48AA /* ModelController.swift in Sources */,
 				DDD3235520C04D3900BE1971 /* ApiResult.swift in Sources */,
+				B378CC5821433FC3000F48AA /* EqualizerViewController.swift in Sources */,
+				B378CC5421433FC3000F48AA /* DataViewController.swift in Sources */,
+				B378CC5521433FC3000F48AA /* PlaylistViewController.swift in Sources */,
 				DD500A5A20D12DF100FFB72B /* Utils.swift in Sources */,
 				DD500A5620D11DE200FFB72B /* Song.swift in Sources */,
-				DD4095BC209C5EFC0069E626 /* PlayerViewController.swift in Sources */,
 				DDD3235920C04DE500BE1971 /* APIService.swift in Sources */,
 				DD500A5820D129C500FFB72B /* NSError+IPlayer.swift in Sources */,
 				DD53F54820D93F9900FE5211 /* PlayerManager.swift in Sources */,
